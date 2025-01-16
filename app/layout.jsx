@@ -1,17 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Stars from "@/components/Stars";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-poppins",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
@@ -27,7 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         cz-shortcut-listen="false"
-        className={`${geistSans.variable} ${geistMono.variable} text-white antialiased bg-ellipse flex flex-col min-h-screen w-full`}
+        className={`${poppins.variable} ${montserrat.variable} text-white antialiased bg-ellipse flex flex-col min-h-screen w-full`}
       >
         <Stars />
         <div className="flex-grow flex flex-col">

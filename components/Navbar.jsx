@@ -86,7 +86,7 @@ const Navbar = () => {
           <Link
             key={i}
             href={link.href}
-            className={`pb-2 ${
+            className={`pb-2 hover:border-b transition-all duration-300 ${
               pathname == link.href && "text-[#00C6FF] border-b"
             }`}
           >

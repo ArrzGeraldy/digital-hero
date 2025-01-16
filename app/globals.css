@@ -2,11 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: var(--font-poppins);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.splide__arrow svg {
+  fill: #1c55e0 !important; /* Warna ikon panah */
+}
+
+.is-overflow {
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}
 .bg-ellipse {
   background: radial-gradient(
     ellipse at 50% 50%,
-    #000066 10%,
-    #000044 40%,
+    #001748 10%,
+    #00172a 40%,
     #000022 60%,
     #000000 80%,
     #000000 100%
@@ -19,6 +35,12 @@
   padding: 1px;
   border-radius: 0.375rem;
   box-shadow: 0px 1px 10px 0px #3853a4;
+}
+.gradient-border-wrapper-2 {
+  position: relative;
+  background: linear-gradient(to right, #0ad3ff, #2061ff);
+  padding: 2px;
+  border-radius: 0.5rem;
 }
 .bg-gradient {
   background: linear-gradient(to right, #0ad3ff, #2061ff);
@@ -119,22 +141,9 @@
   background-image: url("../public/assets/homepage/watch/watch.png");
 }
 
-.bg-card-1 {
-  background-image: url("../public/assets/homepage/from-zero/card-1.png");
+.bg-container {
+  background-image: url("../public/assets/homepage/watch/container.png");
+  background-position: center;
+  background-size: 100%;
   background-repeat: no-repeat;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.rotate-animation {
-  animation: rotate 10s linear infinite;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }

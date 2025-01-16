@@ -1,16 +1,17 @@
 const JourneyCard = ({ title, content, image }) => {
   return (
-    <div className="py-8 px-6 flex flex-col bg-why-gradient border-2 relative border-[#2961CD] rounded-md">
-      <div>
-        <h4 className="2xl:text-5xl xl:text-4xl font-bold text-[#2961CD] text-gradient text-center  lg:text-start">
-          {title}
-        </h4>
-      </div>
-      <div className="flex gap-8 items-center">
-        <p className="2xl:text-2xl  mt-8">{content}</p>
-        <img src={`/assets/homepage/watch/${image}`} />
-      </div>
-      {/* <img
+    <div className="gradient-border-wrapper-2 ">
+      <div className="py-8 px-6 flex flex-col bg-why-gradient  relative border-[#2961CD] rounded-md h-full">
+        <div>
+          <h4 className="2xl:text-5xl xl:text-4xl font-bold text-[#2961CD] text-gradient text-center  lg:text-start">
+            {title}
+          </h4>
+        </div>
+        <div className="flex gap-8 items-center">
+          <p className="2xl:text-2xl  mt-8">{content}</p>
+          <img src={`/assets/homepage/watch/${image}`} />
+        </div>
+        {/* <img
         src={`/assets/homepage/watch/${image}`}
         className="lg:hidden block"
       />
@@ -26,6 +27,7 @@ const JourneyCard = ({ title, content, image }) => {
           className="hidden lg:block"
         />
       </div> */}
+      </div>
     </div>
   );
 };
