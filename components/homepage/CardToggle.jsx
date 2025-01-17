@@ -2,19 +2,18 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 
 const CardToggle = () => {
-  const [openCards, setOpenCards] = useState([1]); // Ubah dari satu nilai ke array
+  const [openCards, setOpenCards] = useState([1]);
 
   const toggleCard = (index) => {
-    setOpenCards(
-      (prevOpenCards) =>
-        prevOpenCards.includes(index)
-          ? prevOpenCards.filter((card) => card !== index) // Tutup jika sudah ada
-          : [...prevOpenCards, index] // Tambahkan jika belum ada
+    setOpenCards((prevOpenCards) =>
+      prevOpenCards.includes(index)
+        ? prevOpenCards.filter((card) => card !== index)
+        : [...prevOpenCards, index]
     );
   };
 
   return (
-    <div className="2xl:w-1/2 w-[60%]">
+    <div className="">
       {/* Card 1 */}
       <div className="gradient-border-wrapper-2 mb-8">
         <div className="bg-why-gradient flex flex-col 2xl:p-8 p-4 rounded-lg">

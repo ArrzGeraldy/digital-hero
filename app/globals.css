@@ -11,7 +11,7 @@ body {
 }
 
 .splide__arrow svg {
-  fill: #1c55e0 !important; /* Warna ikon panah */
+  fill: #4177ff !important; /* Warna ikon panah */
 }
 
 .is-overflow {
@@ -21,7 +21,7 @@ body {
 .bg-ellipse {
   background: radial-gradient(
     ellipse at 50% 50%,
-    #001748 10%,
+    #02143c 10%,
     #00172a 40%,
     #000022 60%,
     #000000 80%,
@@ -55,6 +55,13 @@ body {
   text-align: center;
 }
 .text-gradient {
+  background: linear-gradient(to right, #0ad3ff, #2061ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-bottom: 12px;
+}
+
+.nav-link:hover {
   background: linear-gradient(to right, #0ad3ff, #2061ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -95,26 +102,6 @@ body {
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }
 
-.card-1 {
-  background-image: url("../public/assets/homepage/from-zero/card-1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-}
-
-.card-2 {
-  background-image: url("../public/assets/homepage/from-zero/card-2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-}
-
 .sidebar {
   transform: translateX(1000px);
   transition: ease 0.3s;
@@ -122,6 +109,12 @@ body {
 
 .sidebar-show {
   transform: translateX(0px);
+}
+
+.container {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card-3 {
   background-image: url("../public/assets/homepage/from-zero/card-3.png");
@@ -134,7 +127,9 @@ body {
 }
 
 .bg-why-gradient {
-  background: linear-gradient(150deg, #131313 70%, #3853a4);
+  /* background: linear-gradient(160deg, #131313 70%, #3853a4); */
+
+  background: linear-gradient(150deg, #131313 70%, #22397f);
 }
 
 .bg-url {
@@ -146,4 +141,18 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 0.7s step-end infinite;
 }

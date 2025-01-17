@@ -17,8 +17,8 @@ const links = [
 ];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const btnRef = useRef();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleSideBar = () => {
     if (btnRef.current) {
@@ -37,7 +37,7 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <nav
-      className={`fixed top-0 w-full  px-5 py-2.5 flex z-10 justify-between items-center text-white transition-all duration-300 ${
+      className={`fixed top-0 w-full  px-5 py-3 flex z-10 justify-between items-center text-white transition-all duration-300 ${
         isScrolled
           ? "bg-color-black border-b border-gray-700"
           : "bg-transparent"
@@ -86,9 +86,11 @@ const Navbar = () => {
           <Link
             key={i}
             href={link.href}
-            className={`pb-2 hover:border-b transition-all duration-300 ${
-              pathname == link.href && "text-[#00C6FF] border-b"
-            }`}
+            className={`pb-2 hover:border-b  transition-all duration-300 ${
+              pathname == link.href
+                ? "text-[#00C6FF] border-b hover:text-[#00C6FF] "
+                : "nav-link"
+            } `}
           >
             {link.text}
           </Link>

@@ -5,104 +5,101 @@ import { Check, Minus, Plus } from "lucide-react";
 
 const page = () => {
   return (
-    <main className="h-full bg-hero relative mx-auto w-[90%] pb-14">
-      <section className="flex flex-col lg:flex-row w-full mt-8 lg:mt-0 items-center lg:justify-between justify-center min-h-screen">
-        <div className="lg:w-1/2 w-full">
-          <h4 className="lg:text-[50px] text-[40px] font-bold text-center lg:text-start ">
-            The Heroes Journey:{" "}
-            <span className="text-gradient">A Path to Digital Mastery</span>
-          </h4>
-          <div className="hidden lg:block">
-            <p className="mt-8 text-xl font-semibold text-gray-300 text-center lg:text-start">
-              <span className="text-gradient">Don’t walk this path alone!</span>{" "}
-              We’ve summarized the experience of industry experts and turned it
+    <main className="h-full relative mx-auto pb-14 w-[90%]">
+      <section className="min-h-screen w-full py-20 flex items-center mt-16">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+          {/* Text Content */}
+          <div className="w-full 2xl:w-2/3 lg:w-1/2 space-y-6">
+            <h1 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-7xl font-bold montserrat">
+              The Heroes Journey:{" "}
+              <span className="text-gradient block">
+                A Path to Digital Mastery
+              </span>
+            </h1>
+
+            <p className="text-lg  xl:text-xl 2xl:text-3xl text-gray-300 montserrat">
+              <span className="text-gradient font-semibold">
+                Don't walk this path alone!
+              </span>{" "}
+              We've summarized the experience of industry experts and turned it
               into a clear digitalization roadmap, helping you avoid the
               mistakes we have had. Start your journey with expert guidance
               along the way to fast-track your success.
             </p>
-            <button className="px-6 py-4 rounded-md bg-gradient mt-12 text-xl font-semibold">
+
+            <button className="bg-gradient mx-auto 2xl:text-3xl 2xl:px-14 2xl:py-8 xl:px-6 xl:py-4 text-lg xl:text-xl mt-16  font-semibold rounded-lg">
               Start My Journey
             </button>
           </div>
-        </div>
-        <div className="lg:w-1/2 w-full">
-          <img src="/assets/journey/hero.png" />
-          <div className="lg:hidden flex flex-col items-center ">
-            <p className="mt-8 text-xl font-semibold text-gray-300 text-center lg:text-start">
-              <span className="text-gradient">Don’t walk this path alone!</span>{" "}
-              We’ve summarized the experience of industry experts and turned it
-              into a clear digitalization roadmap, helping you avoid the
-              mistakes we have had. Start your journey with expert guidance
-              along the way to fast-track your success.
-            </p>
-            <button className="px-6 py-4 rounded-md bg-gradient mt-12 text-xl font-semibold">
-              Start My Journey
-            </button>
+
+          {/* Image */}
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
+            <img
+              src="/assets/journey/hero.png"
+              alt="Hero Journey"
+              className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-3xl object-contain"
+            />
           </div>
         </div>
       </section>
 
       <section className="mt-32">
-        <h4 className="lg:text-[50px] text-[40px] font-bold text-center ">
-          What Will
-          <span className="text-gradient">I Benefit from This Journey?</span>
+        <h4 className="2xl:text-7xl xl:text-5xl lg:text-4xl text-3xl font-bold text-center montserrat">
+          What Will I
+          <span className="text-gradient"> Benefit from This Journey?</span>
         </h4>
-        <p className="mt-8 text-xl font-semibold text-gray-300 w-3/4 mx-auto text-center">
-          <span className="text-gradient">The Heroes Journey</span> equips
-          individuals with essential skills and knowledge to excel in the
+        <p className="w-3/4 mx-auto text-center mt-12 2xl:text-4xl lg:text-xl xl:text-2xl text-xl text-gray-200 font-normal leading-loose">
+          <span className="text-gradient font-semibold">
+            The Heroes Journey
+          </span>{" "}
+          equips individuals with essential skills and knowledge to excel in the
           digital era, offering expert-crafted guidance and best-practice
           methods to accelerate your progress.
         </p>
 
         <div className="mt-12">
-          <div className="bg-why-gradient border-2 mt-6 flex flex-col lg:flex-row gap-4 px-4 py-6 border-[#2961CD] rounded-md">
-            <div className="w-auto">
-              <h4 className="text-[40px] bg-red-400 text-center lg:hidden text-gradient font-bold">
-                2 Weeks Program
-              </h4>
-              <p className="text-xl font-bold text-center lg:hidden">
-                Intensive Live Webinar Session
-              </p>
-              <img src="/assets/journey/program.png" />
+          <div className="bg-why-gradient border-2 mt-6 grid grid-cols-5 gap-8 items-center py-12 2xl:py-16 px-8 border-[#2961CD] rounded-md">
+            <div className="col-span-2">
+              <img src="/assets/journey/2-weeks-program.png" alt="" />
             </div>
-
-            <div className="lg:w-3/4 w-full">
-              <h4 className="text-[50px] hidden lg:block text-gradient font-bold">
-                2 Weeks Program
-              </h4>
-              <p className="text-xl font-bold hidden lg:block">
-                Intensive Live Webinar Session
-              </p>
-
-              <div className="lg:w-[90%] w-full lg:text-xl">
-                {" "}
-                <p className="mt-8">
-                  Discover your full potential in the digital era with The
-                  <span className="text-gradient"> Heroes Journey.</span> This
-                  live webinar takes you through a{" "}
-                  <span className="text-gradient">step-by-step</span> roadmap to
-                  <span className="text-gradient">
-                    {" "}
-                    mastering digitalization.
-                  </span>{" "}
-                  Gain insights and proven strategies from{" "}
-                  <span className="text-gradient">Experts</span> in various
-                  industries.
-                </p>
-                <p className="mt-8">
-                  This roadmap aims to help{" "}
-                  <span className="text-gradient">you succeed in today’s</span>{" "}
-                  digital landscape.{" "}
-                </p>
-                <p className="mt-8">
-                  “Ready to thrive in today’s competitive digital market?"
+            <div className="flex flex-col col-span-3 space-y-8">
+              <div>
+                <h1 className="text-gradient 2xl:text-7xl xl:text-5xl lg:text-4xl text-3xl font-bold">
+                  2 Weeks Program
+                </h1>
+                <p className="font-semibold  2xl:text-3xl xl:text-2xl mt-1">
+                  Intensive Live Webinar Session
                 </p>
               </div>
+              <p className="2xl:text-2xl xl:text-xl text-slate-200">
+                Discover your full potential in the digital era with{" "}
+                <span className="text-[#00C6FF] font-semibold">
+                  The Heroes Journey
+                </span>
+                . This live webinar takes you through a{" "}
+                <span className="text-[#00C6FF] font-semibold">
+                  step-by-step
+                </span>{" "}
+                roadmap to mastering digitalization. Gain insights and proven
+                strategies from{" "}
+                <span className="text-[#00C6FF] font-semibold">Expert</span> in
+                various industries.
+              </p>
+              <p className="2xl:text-2xl xl:text-xl text-slate-200">
+                This roadmap aims to help{" "}
+                <span className="text-[#00C6FF] font-semibold">
+                  you succeed in today’s
+                </span>{" "}
+                digital landscape.{" "}
+              </p>
+              <p className="2xl:text-2xl xl:text-xl text-slate-200">
+                “Ready to thrive in today’s competitive digital market?"
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-12  grid grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-24  grid grid-cols-2 lg:grid-cols-3 gap-12">
           {digitalDatas.map((data) => (
             <DigitalMarketCard
               key={data.title}
