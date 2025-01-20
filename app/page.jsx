@@ -1,12 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { journeyDatas } from "./data";
 import JourneyCard from "@/components/JourneyCard";
 import ReviewSlider from "@/components/ReviewSlider";
 import AnimatedCounter from "@/components/homepage/AnimatedCounter";
 import CardToggle from "@/components/homepage/CardToggle";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Hero from "@/components/homepage/Hero";
 
 export default function Home() {
@@ -15,38 +13,49 @@ export default function Home() {
       <Hero />
 
       <section className="mt-32 w-10/12 mx-auto">
-        <h4 className="2xl:text-6xl xl:text-6xl lg:text-5xl text-4xl font-bold text-center montserrat">
-          From <span className="text-gradient">Zero to Hero</span>
-        </h4>
-        <p className="text-center mt-4 2xl:text-4xl xl:text-3xl text-2xl  font-semibold text-gray-300">
-          Choose Your Path: <span className="text-gradient">Be The Hero</span>
-        </p>
+        <div data-aos="fade-up">
+          <h4 className="2xl:text-6xl xl:text-6xl lg:text-5xl text-4xl font-bold text-center montserrat">
+            From <span className="text-gradient">Zero to Hero</span>
+          </h4>
+          <p className="text-center mt-4 2xl:text-4xl xl:text-3xl text-2xl  font-semibold text-gray-300">
+            Choose Your Path: <span className="text-gradient">Be The Hero</span>
+          </p>
+        </div>
 
         <div className="grid grid-cols-2 justify-center mt-24 gap-36 items-end w-[93%] mx-auto">
-          <div className="">
+          <div
+            className="h-full flex flex-col justify-end"
+            data-aos="fade-right"
+          >
             <img src="/assets/homepage/from-zero/zero.png" />
             <h1 className="font-bold text-center 2xl:text-8xl mt-8 xl:text-6xl lg:text-4xl text-2xl">
               ZERO
             </h1>
           </div>
-          <div className="relative border-4 rounded-lg border-[#2961CD] w-fit   white-shadow-box">
+          <div
+            className="relative border-4 rounded-lg border-[#2961CD] w-fit   white-shadow-box"
+            data-aos="fade-left"
+          >
             <img src="/assets/homepage/from-zero/hero.png" className="p-12 " />
             <div className="rounded-t-2xl bg-[#1C55E0] font-bold text-center 2xl:text-8xl mt-8 xl:text-6xl lg:text-4xl text-2xl">
               HERO
             </div>
           </div>
         </div>
-        <div className="mt-44">
+        <div className="mt-44" data-aos="fade-up">
           <ReviewSlider />
         </div>
       </section>
 
       <section className="mt-44 w-10/12 mx-auto">
-        <h4 className="2xl:text-6xl xl:text-5xl lg:text-4xl text-4xl font-bold text-center montserrat">
+        <h4
+          data-aos="fade-up"
+          className="2xl:text-6xl xl:text-5xl lg:text-4xl text-4xl font-bold text-center montserrat"
+        >
           Why You Should NOT <span className="text-gradient">Choose Us?</span>
         </h4>
 
-        <div className="mt-24 ">
+        <div className="mt-24 " data-aos="fade-up">
           {/* content-1 */}
           <div className="w-full relative">
             <div className=" text-4xl  bg-gradient rounded-full flex items-center justify-center 2xl:w-20 2xl:h-20 w-14 h-14 absolute">
@@ -153,7 +162,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:w-[85%] w-full mx-auto mt-80 relative">
+        <div
+          data-aos="fade-up"
+          className="lg:w-[85%] w-full mx-auto mt-80 relative"
+        >
           <img src="/assets/homepage/watch/watch.png" className="w-full" />
           <div className="flex  flex-col  items-center absolute px-4 w-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <h4 className="text-center lg:text-2xl xl:text-2xl 2xl:text-4xl  font-bold">
@@ -162,13 +174,13 @@ export default function Home() {
                 or you want to be the winner?
               </span>
             </h4>
-            <div className=" w-[60%] mt-10 flex gap-8 justify-center font-semibold text-sm lg:text-base">
+            <div className=" w-[60%] 2xl:mt-10 xl:mt-6  flex gap-8 justify-center font-semibold text-sm lg:text-base">
               <button className="gradient-border-wrapper w-[40%] 2xl:text-2xl text-xl font-semibold">
-                <p className="py-6 rounded-lg px-8  bg-[#00052a] ">
+                <p className="2xl:py-6 xl:py-4  rounded-md px-8  bg-[#00052a] ">
                   Watch Others
                 </p>
               </button>
-              <button className="bg-gradient w-[40%] py-6 rounded-lg 2xl:text-2xl text-xl font-semibold">
+              <button className="bg-gradient w-[40%] 2xl:py-6 xl:py-4  rounded-lg 2xl:text-2xl text-xl font-semibold">
                 I'm The Winner!
               </button>
             </div>
@@ -176,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-44 w-10/12 mx-auto">
+      <section className="mt-44 w-10/12 mx-auto" data-aos="fade-up">
         <h4 className="2xl:text-6xl xl:text-5xl lg:text-4xl text-4xl text-center font-bold montserrat">
           The Heroes Journey:{" "}
           <span className="text-gradient">A Path to Digital Mastery</span>
@@ -206,7 +218,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-44 w-10/12 mx-auto">
+      <section className="mt-44 w-10/12 mx-auto" data-aos="fade-up">
         <h4 className="2xl:text-6xl xl:text-4xl lg:text-4xl text-3xl font-bold text-center montserrat">
           Looking to Make an Impact?{" "}
           <span className="text-gradient block lg:inline">
@@ -223,7 +235,10 @@ export default function Home() {
               Let's Collabarate!
             </button>
           </div>
-          <div className="mt-24 flex gap-8 items-center justify-center w-[93%] mx-auto">
+          <div
+            data-aos="fade-up"
+            className="mt-24 flex gap-8 items-center justify-center w-[93%] mx-auto"
+          >
             <CardToggle />
             <div className="">
               <img src="/assets/homepage/watch/collabrate.png" className="" />
@@ -232,7 +247,7 @@ export default function Home() {
         </h4>
       </section>
 
-      <section className="mt-44 w-10/12 mx-auto">
+      <section className="mt-44 w-10/12 mx-auto" data-aos="fade-up">
         <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl text-3xl font-bold text-center text-gradient montserrat">
           We Are Digitalizing The Future!
         </h1>
@@ -250,7 +265,10 @@ export default function Home() {
             Join Our Community
           </button>
         </div>
-        <div className="gradient-border-wrapper-2  mt-24 w-[93%] mx-auto">
+        <div
+          data-aos="fade-up"
+          className="gradient-border-wrapper-2  mt-24 w-[93%] mx-auto"
+        >
           <div className="bg-why-gradient  flex flex-col justify-start items-start px-4  rounded-md py-12">
             <h4 className="2xl:text-6xl xl:text-4xl lg:text-4xl text-3xl text-center font-bold w-full montserrat">
               Be the Hero of Your{" "}

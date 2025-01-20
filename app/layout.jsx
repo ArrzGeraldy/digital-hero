@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Stars from "@/components/Stars";
 import Footer from "@/components/Footer";
+import AosWrapper from "@/components/AosWrapper";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -31,12 +32,14 @@ export default function RootLayout({ children }) {
         cz-shortcut-listen="false"
         className={`${poppins.variable} ${montserrat.variable} text-white antialiased bg-ellipse flex flex-col min-h-screen w-full`}
       >
-        <Stars />
-        <div className="flex-grow flex flex-col">
-          <Navbar />
-          {children}
-        </div>
-        <Footer />
+        <AosWrapper>
+          <Stars />
+          <div className="flex-grow flex flex-col">
+            <Navbar />
+            {children}
+          </div>
+          <Footer />
+        </AosWrapper>
       </body>
     </html>
   );

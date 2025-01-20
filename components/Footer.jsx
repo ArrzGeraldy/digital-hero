@@ -16,28 +16,40 @@ const Footer = () => {
       <div className="w-[90%] mx-auto flex  justify-between px-8">
         <div className="flex flex-col justify-start">
           <img src="/assets/nav/digital-title.png" className="w-[80%]" />
-          <div className="ms-4 2xl:text-xl xl:text-lg">
-            <p className="mt-4">Digital Hero is your partner</p>
-            <p className="mt-4">in unlocking the full potential of your</p>
-            <p className="mt-4"> business and career in the digital era.</p>
+          <div className="ms-4 2xl:text-xl xl:text-base ">
+            <p className="">Digital Hero is your partner</p>
+            <p className="">in unlocking the full potential of your</p>
+            <p className=""> business and career in the digital era.</p>
           </div>
         </div>
         <div>
-          <h1 className="2xl:text-3xl xl:text-2xl font-bold pt-6">
+          <h1 className="2xl:text-3xl xl:text-xl font-bold pt-3">
             Contact Info
           </h1>
-          <div className="flex items-center gap-2 mt-8 2xl:text-2xl xl:text-lg">
-            <Mail size={28} />
-            <span>info@gmil.com</span>
+          <div className="2xl:block hidden">
+            <div className="flex gap-2 mt-4 2xl:text-2xl xl:text-base">
+              <Mail size={28} />
+              <span>info@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2 mt-4 2xl:text-2xl xl:text-base">
+              <Phone size={28} />
+              <span>+62 819 5888 9510</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2 mt-4 2xl:text-2xl xl:text-lg">
-            <Phone size={28} />
-            <span>+62 819 5888 9510</span>
+          <div className="2xl:hidden block">
+            <div className="flex items-center gap-2 mt-4 2xl:text-2xl xl:text-base">
+              <Mail size={20} />
+              <span>info@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2 mt-4 2xl:text-2xl xl:text-base">
+              <Phone size={20} />
+              <span>+62 819 5888 9510</span>
+            </div>
           </div>
         </div>
         <div>
-          <h1 className="2xl:text-3xl xl:text-2xl font-bold pt-6">Explore</h1>
-          <div className="flex flex-col 2xl:text-2xl xl:text-lg">
+          <h1 className="2xl:text-3xl xl:text-xl font-bold pt-3">Explore</h1>
+          <div className="flex flex-col 2xl:text-2xl xl:text-base">
             <Link href={"/"} className="mt-4">
               Home
             </Link>
@@ -50,8 +62,14 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="2xl:text-3xl xl:text-2xl font-bold pt-6">Follow Us</h1>
-          <div className="flex gap-4 2xl:text-2xl xl:text-lg mt-6">
+          <h1 className="2xl:text-3xl xl:text-xl font-bold pt-3">Follow Us</h1>
+          <div className="flex gap-4 2xl:hidden xl:text-lg mt-4">
+            <Instagram size={24} />
+            <Music2 size={24} />
+            <Linkedin size={24} />
+            <Facebook size={24} />
+          </div>
+          <div className="gap-4 2xl:flex hidden mt-4">
             <Instagram size={28} />
             <Music2 size={28} />
             <Linkedin size={28} />

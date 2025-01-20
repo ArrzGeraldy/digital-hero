@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import TypingText from "../TypingText";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Hero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,11 +43,20 @@ const Hero = () => {
           className="w-full h-auto"
         />
       </div>
-      <div
+
+      {/* scroll blue */}
+      {/* <div
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
         hidden={isScrolled}
       >
         <img src="/assets/lottie/scroll_down.gif" className="h-20 2xl:h-28" />
+      </div> */}
+
+      <div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 h-16 "
+        hidden={isScrolled}
+      >
+        <DotLottieReact src="/assets/lottie/s_mouse.lottie" loop autoplay />
       </div>
     </section>
   );
