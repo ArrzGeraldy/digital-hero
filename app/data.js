@@ -86,18 +86,18 @@ export const careers = [
     title: "Be a Catalyst for Change",
     content:
       "At Digital Hero, you won't just work; you'll lead. Collaborate with like-minded innovators to transform traditional businesses into thriving digital ecosystems.",
-    image: "image-1.png",
+    image: "career-1.png",
   },
   {
     title: "Learn, Innovate, and Lead",
     content:
       "We invest in your growth with access to cutting-edge tools, expert mentorship, and a culture that encourages entrepreneurial thinking to help you master the art of digitalizing businesses.",
-    image: "image-7.png",
+    image: "career-2.png",
   },
   {
     title: "Make a Real-world Impact",
     content:
       "Your work will directly shape the future of businesses, empowering them to thrive in the digital era. Join a team that values creativity, innovation, and bold action.",
-    image: "image-4.png",
+    image: "career-3.png",
   },
 ];

@@ -32,14 +32,7 @@ export default function RootLayout({ children }) {
         cz-shortcut-listen="false"
         className={`${poppins.variable} ${montserrat.variable} text-white antialiased bg-ellipse flex flex-col min-h-screen w-full`}
       >
-        <AosWrapper>
-          <Stars />
-          <div className="flex-grow flex flex-col">
-            <Navbar />
-            {children}
-          </div>
-          <Footer />
-        </AosWrapper>
+        {children}
       </body>
     </html>
   );

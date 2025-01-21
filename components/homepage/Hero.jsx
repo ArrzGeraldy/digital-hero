@@ -23,6 +23,7 @@ const Hero = () => {
           text={
             "Unlocking Full Digital Potential of Businesses and Individuals in Indonesia"
           }
+          className="2xl:text-4xl xl:text-2xl text-xl text-gray-300 w-3/4 mx-auto mt-8 text-center montserrat"
         />
         <div className="flex items-center w-fit mx-auto justify-center gap-8 mt-12">
           <Link href={"/"} className="gradient-border-wrapper">
@@ -30,8 +31,8 @@ const Hero = () => {
               Read More
             </div>
           </Link>
-          <Link href={"/"} className="gradient-border-wrapper">
-            <div className="rounded-md px-12 py-4 text-2xl font-semibold ">
+          <Link href={"/"} className="gradient-border-wrapper bounce-btn">
+            <div className="rounded-md px-12 py-4 text-2xl font-semibold">
               Join Now
             </div>
           </Link>

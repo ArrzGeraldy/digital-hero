@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TypingText = ({ text }) => {
+const TypingText = ({ text, className = "" }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const typingSpeed = 60;
@@ -25,9 +25,9 @@ const TypingText = ({ text }) => {
       clearTimeout(timeoutId);
     };
   }, []);
-
+  // 2xl:text-4xl xl:text-2xl text-xl text-gray-300 w-3/4 mx-auto mt-8 text-center montserrat
   return (
-    <p className="2xl:text-4xl xl:text-2xl text-xl text-gray-300 w-3/4 mx-auto mt-8 text-center montserrat">
+    <p className={`${className}`}>
       {displayedText}
       {!isTypingComplete && (
         <span className="border-r-2 border-gray-400 animate-blink">&nbsp;</span>

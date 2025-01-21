@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronRight, Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
 const CardToggle = () => {
@@ -27,28 +27,16 @@ const CardToggle = () => {
             </h4>
             {/* button toggle */}
             <div
-              className={`p-2 rounded-full cursor-pointer ${
-                openCards.includes(1)
-                  ? "bg-white text-black"
-                  : "text-white bg-black"
-              }`}
+              className={`border text-lg px-2 py-2 rounded-full bg-color-black cursor-pointer`}
               onClick={() => toggleCard(1)}
             >
               {openCards.includes(1) ? (
                 <div>
-                  <ChevronDown size={28} className="2xl:block hidden" />
-                  <ChevronDown
-                    size={26}
-                    className="xl:block 2xl:hidden hidden"
-                  />
+                  <Minus size={20} />
                 </div>
               ) : (
-                <div>
-                  <ChevronRight size={28} className="2xl:block hidden" />
-                  <ChevronRight
-                    size={26}
-                    className="xl:block 2xl:hidden hidden"
-                  />
+                <div className=" ">
+                  <Plus size={20} />
                 </div>
               )}
             </div>
@@ -84,28 +72,16 @@ const CardToggle = () => {
             </h4>
             {/* button toggle */}
             <div
-              className={`p-2 rounded-full cursor-pointer ${
-                openCards.includes(2)
-                  ? "bg-white text-black"
-                  : "text-white bg-black"
-              }`}
+              className={`border text-lg px-2 py-2 rounded-full bg-color-black cursor-pointer`}
               onClick={() => toggleCard(2)}
             >
               {openCards.includes(2) ? (
                 <div>
-                  <ChevronDown size={28} className="2xl:block hidden" />
-                  <ChevronDown
-                    size={26}
-                    className="xl:block 2xl:hidden hidden"
-                  />
+                  <Minus size={20} />
                 </div>
               ) : (
-                <div>
-                  <ChevronRight size={28} className="2xl:block hidden" />
-                  <ChevronRight
-                    size={26}
-                    className="xl:block 2xl:hidden hidden"
-                  />
+                <div className=" ">
+                  <Plus size={20} />
                 </div>
               )}
             </div>
@@ -137,28 +113,16 @@ const CardToggle = () => {
             </h4>
             {/* button toggle */}
             <div
-              className={`p-2 rounded-full cursor-pointer ${
-                openCards.includes(3)
-                  ? "bg-white text-black"
-                  : "text-white bg-black"
-              }`}
+              className={`border text-lg px-2 py-2 rounded-full bg-color-black cursor-pointer`}
               onClick={() => toggleCard(3)}
             >
               {openCards.includes(3) ? (
                 <div>
-                  <ChevronDown size={28} className="2xl:block hidden" />
-                  <ChevronDown
-                    size={26}
-                    className="xl:block 2xl:hidden hidden"
-                  />
+                  <Minus size={20} />
                 </div>
               ) : (
-                <div>
-                  <ChevronRight size={28} className="2xl:block hidden" />
-                  <ChevronRight
-                    size={26}
-                    className="xl:block 2xl:hidden hidden"
-                  />
+                <div className=" ">
+                  <Plus size={20} />
                 </div>
               )}
             </div>

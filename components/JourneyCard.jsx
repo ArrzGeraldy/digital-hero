@@ -8,7 +8,7 @@ const JourneyCard = ({ title, content, image }) => {
           </h4>
         </div>
         <div className="grid grid-cols-3 gap-8  mt-6">
-          <p className="2xl:text-xl text-sm col-span-2 eading-relaxed">
+          <p className="2xl:text-2xl text-lg col-span-2 leading-relaxed">
             {content}
           </p>
           <img
@@ -16,22 +16,6 @@ const JourneyCard = ({ title, content, image }) => {
             className={`${image == "img-3.png" && "mt-4"} `}
           />
         </div>
-        {/* <img
-        src={`/assets/homepage/watch/${image}`}
-        className="lg:hidden block"
-      />
-      <h4 className="xl:text-4xl lg:text-2xl text-xl font-bold text-[#2961CD] text-gradient text-center  lg:text-start">
-        {title}
-      </h4>
-      <div className="flex gap-4 lg:flex-row flex-col-reverse">
-        <p className="lg:w-3/4 w-full text-sm lg:text-xl text-center lg:text-start">
-          {content}
-        </p>
-        <img
-          src={`/assets/homepage/watch/${image}`}
-          className="hidden lg:block"
-        />
-      </div> */}
       </div>
     </div>
   );

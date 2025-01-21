@@ -157,46 +157,79 @@ body {
   animation: blink 0.7s step-end infinite;
 }
 
-/* From Uiverse.io by boryanakrasteva */
-.btn {
-  width: 30px;
-  height: 50px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  outline: 2px solid rgb(105, 127, 255);
-  box-shadow: 0px 0px 10px rgb(105, 127, 255);
-  position: relative;
-}
-
-.scroll {
-  width: 5px;
-  height: 10px;
-  border-radius: 10px;
-  background-color: rgb(105, 127, 255);
-  box-shadow: 0px 0px 10px rgb(105, 127, 255);
-  animation: scroll_4013 2s linear infinite;
-  transform: translateY(40%);
-}
-
-.btn:after {
-  content: "scroll";
-  position: absolute;
-  top: 140%;
-  color: whitesmoke;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-@keyframes scroll_4013 {
-  0% {
-    transform: translateY(40%);
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(5px);
   }
 
   50% {
-    transform: translateY(90%);
+    transform: translateY(-15px);
   }
+}
+
+.bounce-btn {
+  animation: bounce 3s infinite;
+  animation-play-state: running;
+  /* transition: transform 0.2s ease-in-out; */
+  transition: all 0.2s ease-in-out;
+}
+
+.bounce-btn:hover {
+  animation-play-state: paused;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+.cards-slide-left {
+  white-space: nowrap;
+  animation: slide-left 10s infinite linear;
+  display: inline-block;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+.cards-slide-right {
+  /* white-space: nowrap; */
+  animation: slide-right 10s infinite linear;
+  display: inline-block;
+}
+
+.text-20 {
+  font-size: 20px;
 }

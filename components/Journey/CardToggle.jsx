@@ -23,7 +23,7 @@ const CardToggle = () => {
           }`}
         >
           <div className="flex justify-between items-center">
-            <h4 className={`text-lg 2xl:text-xl text-start `}>
+            <h4 className={`text-xl 2xl:text-2xl text-start `}>
               What Is AI Business Growth?
             </h4>
             {/* button toggle */}
@@ -51,7 +51,7 @@ const CardToggle = () => {
               opacity: openCards.includes(1) ? 1 : 0,
             }}
           >
-            <p className="xl:text-lg 2xl:text-lg text-start font-normal mt-2 text-gray-200 w-[90%]">
+            <p className="xl:text-lg 2xl:text-xl text-start font-normal mt-2 text-gray-200 w-[90%]">
               We are open to partner with institutions to offer training
               programs, workshops, or digital skill courses for employees,
               students, or members. This could include programs on digital
@@ -70,7 +70,7 @@ const CardToggle = () => {
           }`}
         >
           <div className="flex justify-between items-center">
-            <h4 className={`text-lg 2xl:text-xl text-start`}>
+            <h4 className={`text-xl 2xl:text-2xl text-start`}>
               How can your AI solutions benefit my business?
             </h4>
             {/* button toggle */}
@@ -117,7 +117,7 @@ const CardToggle = () => {
           }`}
         >
           <div className="flex justify-between items-center">
-            <h4 className={`text-lg 2xl:text-xl text-start `}>
+            <h4 className={`text-xl 2xl:text-2xl text-start `}>
               What Is AI Business Growth?
             </h4>
             {/* button toggle */}
@@ -163,7 +163,7 @@ const CardToggle = () => {
           }`}
         >
           <div className="flex justify-between items-center">
-            <h4 className={`text-lg 2xl:text-xl text-start`}>
+            <h4 className={`text-xl 2xl:text-2xl text-start`}>
               What Is AI Business Growth?
             </h4>
             {/* button toggle */}
@@ -191,7 +191,7 @@ const CardToggle = () => {
               opacity: openCards.includes(4) ? 1 : 0,
             }}
           >
-            <p className="xl:text-lg 2xl:text-lg text-start font-normal mt-2 text-gray-200 w-[90%]">
+            <p className="xl:text-lg 2xl:text-xl text-start font-normal mt-2 text-gray-200 w-[90%]">
               We are open to partner with institutions to offer training
               programs, workshops, or digital skill courses for employees,
               students, or members. This could include programs on digital
