@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight, Minus, Plus } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
 const CardToggle = () => {
@@ -15,11 +15,14 @@ const CardToggle = () => {
   return (
     <div className="">
       {/* Card 1 */}
-      <div className="gradient-border-wrapper-2 mb-8">
+      <div
+        className="gradient-border-wrapper-2 mb-8 cursor-pointer"
+        onClick={() => toggleCard(1)}
+      >
         <div className="bg-why-gradient flex flex-col 2xl:p-8 p-4 rounded-lg">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-4">
             <h4
-              className={`text-xl 2xl:text-3xl font-semibold text-start ${
+              className={`xl:text-xl text-[15px] leading-relaxed 2xl:text-3xl font-semibold text-start ${
                 openCards.includes(1) && "text-[#00C6FF]"
               }`}
             >
@@ -27,16 +30,18 @@ const CardToggle = () => {
             </h4>
             {/* button toggle */}
             <div
-              className={`border text-lg px-2 py-2 rounded-full bg-color-black cursor-pointer`}
-              onClick={() => toggleCard(1)}
+              className={`border text-lg lg:p-2 p-1 rounded-full bg-color-black cursor-pointer`}
+              // onClick={() => toggleCard(1)}
             >
               {openCards.includes(1) ? (
                 <div>
-                  <Minus size={20} />
+                  <Minus size={20} className="lg:block hidden" />
+                  <Minus size={16} className="block lg:hidden" />
                 </div>
               ) : (
                 <div className=" ">
-                  <Plus size={20} />
+                  <Plus size={20} className="lg:block hidden" />
+                  <Plus size={16} className="block lg:hidden" />
                 </div>
               )}
             </div>
@@ -48,7 +53,7 @@ const CardToggle = () => {
               opacity: openCards.includes(1) ? 1 : 0,
             }}
           >
-            <p className="xl:text-lg 2xl:text-2xl text-start font-normal mt-2 text-gray-200 w-[90%]">
+            <p className="xl:text-lg 2xl:text-2xl text-start font-normal mt-2 text-gray-200 w-[90%] text-xs">
               We are open to partner with institutions to offer training
               programs, workshops, or digital skill courses for employees,
               students, or members. This could include programs on digital
@@ -60,11 +65,14 @@ const CardToggle = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="gradient-border-wrapper-2 mb-8">
+      <div
+        className="gradient-border-wrapper-2 mb-8 cursor-pointer"
+        onClick={() => toggleCard(2)}
+      >
         <div className="bg-why-gradient flex flex-col 2xl:p-8 p-4 rounded-lg">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-4">
             <h4
-              className={`text-xl 2xl:text-3xl font-semibold text-start ${
+              className={`xl:text-xl text-[15px] leading-relaxed 2xl:text-3xl font-semibold text-start ${
                 openCards.includes(2) && "text-[#00C6FF]"
               }`}
             >
@@ -72,16 +80,17 @@ const CardToggle = () => {
             </h4>
             {/* button toggle */}
             <div
-              className={`border text-lg px-2 py-2 rounded-full bg-color-black cursor-pointer`}
-              onClick={() => toggleCard(2)}
+              className={`border text-lg lg:p-2 p-1 rounded-full bg-color-black cursor-pointer`}
             >
               {openCards.includes(2) ? (
                 <div>
-                  <Minus size={20} />
+                  <Minus size={20} className="lg:block hidden" />
+                  <Minus size={16} className="block lg:hidden" />
                 </div>
               ) : (
                 <div className=" ">
-                  <Plus size={20} />
+                  <Plus size={20} className="lg:block hidden" />
+                  <Plus size={16} className="block lg:hidden" />
                 </div>
               )}
             </div>
@@ -93,7 +102,7 @@ const CardToggle = () => {
               opacity: openCards.includes(2) ? 1 : 0,
             }}
           >
-            <p className="xl:text-lg 2xl:text-2xl text-start font-normal mt-2 text-gray-200 w-[90%]">
+            <p className="xl:text-lg 2xl:text-2xl text-start font-normal mt-2 text-gray-200 w-[90%] text-xs">
               Get guidance and consultation on developing digital strategies to
               achieve your business goals and leverage technology effectively.
             </p>
@@ -101,11 +110,14 @@ const CardToggle = () => {
         </div>
       </div>
       {/* Card 3 */}
-      <div className="gradient-border-wrapper-2 mb-8">
+      <div
+        className="gradient-border-wrapper-2 mb-8 cursor-pointer"
+        onClick={() => toggleCard(3)}
+      >
         <div className="bg-why-gradient flex flex-col 2xl:p-8 p-4 rounded-lg">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-4">
             <h4
-              className={`text-xl 2xl:text-3xl font-semibold text-start ${
+              className={`xl:text-xl text-[15px] leading-relaxed 2xl:text-3xl font-semibold text-start ${
                 openCards.includes(3) && "text-[#00C6FF]"
               }`}
             >
@@ -113,16 +125,17 @@ const CardToggle = () => {
             </h4>
             {/* button toggle */}
             <div
-              className={`border text-lg px-2 py-2 rounded-full bg-color-black cursor-pointer`}
-              onClick={() => toggleCard(3)}
+              className={`border text-lg lg:p-2 p-1 rounded-full bg-color-black cursor-pointer`}
             >
               {openCards.includes(3) ? (
                 <div>
-                  <Minus size={20} />
+                  <Minus size={20} className="lg:block hidden" />
+                  <Minus size={16} className="block lg:hidden" />
                 </div>
               ) : (
                 <div className=" ">
-                  <Plus size={20} />
+                  <Plus size={20} className="lg:block hidden" />
+                  <Plus size={16} className="block lg:hidden" />
                 </div>
               )}
             </div>
@@ -134,7 +147,7 @@ const CardToggle = () => {
               opacity: openCards.includes(3) ? 1 : 0,
             }}
           >
-            <p className="xl:text-lg 2xl:text-2xl text-start font-normal mt-2 text-gray-200 w-[90%]">
+            <p className="xl:text-lg 2xl:text-2xl text-start font-normal mt-2 text-gray-200 w-[90%] text-xs">
               Get guidance and consultation on developing digital strategies to
               achieve your business goals and leverage technology effectively.
             </p>

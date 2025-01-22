@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const handleSideBar = () => {
     if (btnRef.current) {
-      btnRef.current.classList.toggle("hidden");
+      btnRef.current.classList.toggle("sidebar-show");
     }
   };
 
@@ -49,6 +49,7 @@ const Navbar = () => {
           width={225}
           height={200}
           alt="..."
+          className="lg:w-[90%] w-3/5"
         />
       </Link>
       <div
@@ -97,10 +98,10 @@ const Navbar = () => {
         ))}
       </div>
       <div className="lg:flex gap-4 hidden ">
-        <Link href={"/"} className="gradient-border-wrapper">
+        <Link href={"/login"} className="gradient-border-wrapper">
           <div className="rounded-md px-10 py-2 bg-color-black">Login</div>
         </Link>
-        <Link href={"/"} className="rounded-md px-10 py-2 bg-color-blue">
+        <Link href={"/sign-up"} className="rounded-md px-10 py-2 bg-color-blue">
           Register
         </Link>
       </div>

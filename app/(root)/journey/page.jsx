@@ -10,12 +10,12 @@ import TypingText from "@/components/TypingText";
 
 const page = () => {
   return (
-    <main className="h-full relative pb-14 w-10/12 mx-auto">
-      <section className="flex h-screen items-center 2xl:mt-8 xl:mt-16 relative">
+    <main className="h-full relative pb-14 lg:w-10/12 w-11/12 mx-auto">
+      <section className="flex h-screen items-center 2xl:mt-8 xl:mt-16 relative mt-48 ">
         <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
           {/* Text Content */}
           <div className="w-full 2xl:w-2/3 lg:w-1/2 space-y-6">
-            <h1 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl font-bold montserrat">
+            <h1 className="text-3xl  xl:text-4xl 2xl:text-5xl font-bold montserrat text-center lg:text-start">
               The Heroes Journey:{" "}
               <TypingText
                 text={"A Path to Digital Mastery"}
@@ -23,7 +23,32 @@ const page = () => {
               />
             </h1>
 
-            <p className="text-lg  xl:text-xl 2xl:text-3xl text-gray-300 montserrat">
+            <div className="hidden lg:block">
+              <p className="text-lg  xl:text-xl 2xl:text-3xl text-gray-300 montserrat">
+                <span className="text-gradient font-semibold">
+                  Don't walk this path alone!
+                </span>{" "}
+                We've summarized the experience of industry experts and turned
+                it into a clear digitalization roadmap, helping you avoid the
+                mistakes we have had. Start your journey with expert guidance
+                along the way to fast-track your success.
+              </p>
+              <div className="self-start w-fit mt-8">
+                <BtnGradient text={"Start My Journey"} />
+              </div>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
+            <img
+              src="/assets/journey/hero.png"
+              alt="Hero Journey"
+              className="lg:w-full w-[90%] max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-3xl object-contain"
+            />
+          </div>
+          <div className="lg:hidden block">
+            <p className="text-base text-center  xl:text-xl 2xl:text-3xl text-gray-300 montserrat">
               <span className="text-gradient font-semibold">
                 Don't walk this path alone!
               </span>{" "}
@@ -32,17 +57,9 @@ const page = () => {
               mistakes we have had. Start your journey with expert guidance
               along the way to fast-track your success.
             </p>
-
-            <BtnGradient text={"Start My Journey"} />
-          </div>
-
-          {/* Image */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <img
-              src="/assets/journey/hero.png"
-              alt="Hero Journey"
-              className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-3xl object-contain"
-            />
+            <div className="self-start w-fit mx-auto mt-8">
+              <BtnGradient text={"Start My Journey"} />
+            </div>
           </div>
         </div>
       </section>
@@ -222,7 +239,7 @@ const page = () => {
 
       <section className="mt-32 lg:w-2/3 mx-auto">
         <h4
-          className="2xl:text-6xl xl:text-5xl text-[40px] font-bold   text-gradient text-center  montserrat"
+          className="2xl:text-6xl xl:text-5xl text-[40px] font-bold text-center  montserrat"
           data-aos="fade-up"
         >
           Ready to be a Digital Hero?
@@ -291,10 +308,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-full flex justify-center" data-aos="zoom-out">
-            <button className="lg:w-[40%] px-4 lg:px-0 w-auto py-3 lg:py-4 rounded-md bg-gradient mt-16 lg:text-2xl text-lg font-semibold bounce-btn">
-              Register Now
-            </button>
+          <div className="w-full flex justify-center mt-12" data-aos="zoom-out">
+            <BtnGradient text={"Register Now"} />
           </div>
           <p className="text-center mt-6">
             Learn Now and Let’s Digitalize The Future!

@@ -45,6 +45,10 @@ body {
 .bg-gradient {
   background: linear-gradient(to right, #0ad3ff, #2061ff);
 }
+
+.bg-gradient-2 {
+  background: linear-gradient(to right, #0ad3ff 0%, #2061ff 71%);
+}
 .text-neon {
   text-shadow: 0 0 1px #2961cd, 0 0 2px #2961cd, 0 0 4px #2961cd;
 }
@@ -111,11 +115,6 @@ body {
   transform: translateX(0px);
 }
 
-.container {
-  width: 86%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .card-3 {
   background-image: url("../public/assets/homepage/from-zero/card-3.png");
   background-size: contain;
@@ -168,14 +167,24 @@ body {
   }
 }
 
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1.2, 1.5);
+    opacity: 0;
+  }
+}
+
 .bounce-btn {
-  animation: bounce 3s infinite;
+  animation: ping 1s infinite;
   animation-play-state: running;
-  /* transition: transform 0.2s ease-in-out; */
+  transition: transform 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  transform: s;
 }
 
 .bounce-btn:hover {
+  /* animation-play-state: paused; */
   animation-play-state: paused;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
@@ -230,6 +239,17 @@ body {
   display: inline-block;
 }
 
-.text-20 {
-  font-size: 20px;
+.bg-auth {
+  background-image: url("../public/assets/auth/bg-auth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.__main-container-wrapper,
+.container-2 {
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: calc(1150px + 10vw);
+  padding: 0 5vw;
 }

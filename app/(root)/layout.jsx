@@ -1,5 +1,5 @@
 import AosWrapper from "@/components/AosWrapper";
-import Footer from "@/components/Footer";
+import FooterV2 from "@/components/FooterV2";
 import Navbar from "@/components/Navbar";
 import Stars from "@/components/Stars";
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </div>
-        <Footer />
+        <FooterV2 />
       </AosWrapper>
     </main>
   );

@@ -1,21 +1,29 @@
 import SideAuth from "@/components/auth/SideAuth";
 import Link from "next/link";
+import React from "react";
 
 const page = () => {
   return (
     <div className="w-full h-screen grid grid-cols-2 text-color-black">
       <SideAuth>
-        <img src="/assets/auth/login.png" className="w-3/4" />
+        <img src="/assets/auth/sign-up.png" className="w-3/4" />
       </SideAuth>
-      <div className="bg-white flex flex-col items-center justify-center relative">
+      <div className="bg-white flex flex-col items-center justify-center relative pt-24 pb-12">
         <h4 className="text-center 2xl:text-4xl xl:text-[26px] font-semibold">
           Create an account
         </h4>
-        <form
-          action=""
-          className="w-3/5 mt-4 text-[#344054] xl:text-sm 2xl:text-lg"
-        >
+        <form action="" className="w-3/5 mt-4 text-[#344054] text-sm ">
           <div className="flex flex-col gap-2">
+            <label htmlFor="name">Full Name</label>
+            <div className="gradient-border-wrapper-2 p-2">
+              <input
+                type="text"
+                className="w-full rounded-md px-4 py-3 focus:outline-none"
+                placeholder="Enter Your Full Name"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 mt-4">
             <label htmlFor="email">Email</label>
             <div className="gradient-border-wrapper-2 p-2">
               <input
@@ -26,7 +34,17 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-4">
-            <label htmlFor="email">Password</label>
+            <label htmlFor="password">Password</label>
+            <div className="gradient-border-wrapper-2 p-2">
+              <input
+                type="password"
+                className="w-full rounded-md px-4 py-3 focus:outline-none"
+                placeholder="Enter Your Password"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 mt-4">
+            <label htmlFor="confirm">Confirmation Password</label>
             <div className="gradient-border-wrapper-2 p-2">
               <input
                 type="password"
@@ -40,7 +58,7 @@ const page = () => {
               type="submit"
               className="bg-gradient-2 mt-6 font-semibold rounded-lg w-full py-3 text-white"
             >
-              Login
+              Create account
             </button>
           </div>
         </form>
@@ -70,15 +88,15 @@ const page = () => {
                 d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
               />
             </svg>
-            <p className="text-[#2961CD] font-semibold xl:text-sm 2xl:text-lg">
+            <p className="text-[#2961CD] font-semibold text-sm">
               Continue with Google
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-1 mt-4 xl:text-base 2xl:text-lg">
-          <p className="text-[#98A2B3]">Don’t Have An Account ?</p>{" "}
-          <Link href={"/sign-up"} className="text-[#2961CD]">
-            Sign Up
+        <div className="flex justify-center items-center gap-1 mt-4">
+          <p className="text-[#98A2B3]">Already Have An Account ?</p>{" "}
+          <Link href={"/login"} className="text-[#2961CD]">
+            Login
           </Link>
         </div>
       </div>
