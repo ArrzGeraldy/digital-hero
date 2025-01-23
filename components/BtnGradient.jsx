@@ -1,5 +1,3 @@
-import React from "react";
-
 const BtnGradient = ({ text, className = "" }) => {
   return (
     <div className="relative mx-auto w-fit ">

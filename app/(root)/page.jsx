@@ -1,11 +1,11 @@
 "use client";
 
 import BtnGradient from "@/components/BtnGradient";
-import { journeyDatas } from "../data";
+import { journeyDatas, partnersData } from "../data";
 import JourneyCard from "@/components/JourneyCard";
 import ReviewSlider from "@/components/ReviewSlider";
 import AnimatedCounter from "@/components/homepage/AnimatedCounter";
-import CardToggle from "@/components/homepage/CardToggle";
+import CardToggle from "@/components/CardToggle";
 import Hero from "@/components/homepage/Hero";
 import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
@@ -281,8 +281,8 @@ export default function Home() {
           </span>
           <div className="w-full">
             <p className="2xl:text-4xl lg:text-2xl xl:text-3xl text-base text-center text-gray-200 lg:w-3/4 lg:mt-12 mt-4 mx-auto font-normal">
-              Don’t From Project Kickoff to Large-scale Enterprise Solutions,
-              We’re here to help!
+              From Project Kickoff to Large-scale Enterprise Solutions, We’re
+              here to help!
             </p>
           </div>
           <div className="w-full flex items-center lg:mt-12 mt-8">
@@ -292,7 +292,7 @@ export default function Home() {
             data-aos="fade-up"
             className="mt-24 flex gap-8 items-center justify-center w-[93%] mx-auto flex-col-reverse lg:flex-row"
           >
-            <CardToggle />
+            <CardToggle data={partnersData} dataOpen={1} />
             <div className="">
               <img src="/assets/homepage/watch/collabrate.png" className="" />
             </div>
@@ -301,8 +301,8 @@ export default function Home() {
       </section>
 
       <section className="lg:mt-44 mt-24 lg:w-10/12 mx-auto" data-aos="fade-up">
-        <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl text-3xl font-bold text-center text-gradient montserrat">
-          We Are Digitalizing The Future!
+        <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl text-3xl font-bold text-center  montserrat">
+          We Are <span className="text-gradient">Digitalizing The Future!</span>
         </h1>
         <p className="lg:w-3/4 w-[90%] mx-auto text-center lg:mt-12 mt-8 2xl:text-5xl lg:text-2xl xl:text-3xl text-base text-gray-200  font-normal">
           Empowering 10,000 digital heroes by building a powerful ecosystem that
@@ -320,26 +320,21 @@ export default function Home() {
         </div>
         <div
           data-aos="fade-up"
-          className="gradient-border-wrapper-2  mt-24 w-[83%] mx-auto"
+          className="gradient-border-wrapper-2  mt-24 w-[83%] 2xl:w-3/4 mx-auto"
         >
           <div className="bg-why-gradient flex flex-col justify-start items-start px-4  rounded-md lg:py-12 py-6">
-            <h4 className="2xl:text-5xl xl:text-3xl text-2xl text-center font-bold w-full montserrat">
+            <h4 className="2xl:text-5xl xl:text-4xl text-2xl text-center font-bold w-full montserrat">
               Be the Hero of Your{" "}
               <span className="text-gradient">Digital Journey</span>
             </h4>
             <div className="w-[95%] flex flex-col-reverse lg:flex-row lg:gap-16 items-center lg:justify-between lg:mt-8 mt-4 mx-auto">
               <div className="lg:w-[100%]  flex flex-col lg:items-center mt-4 lg:mt-0">
-                <p className="xl:text-base 2xl:text-xl text-sm">
-                  Whether you're a business owner looking to stream-lined
-                  operations or an individual eager to enhance your digital
-                  skills, Digital Hero is here to support your success.
-                  <span className=" ">
-                    We specialize in unlocking the full digital potential for
-                    both businesses and individuals in Indonesia. We’re very
-                    excited to witness the impact you’re going to make.
-                    Experience your own digital transformation, from ZERO to
-                    HERO, with Digital Hero: Let’s Digitalize The Future!
-                  </span>
+                <p className="xl:text-lg 2xl:text-2xl text-sm">
+                  Whether you're a business owner or an individual seeking to
+                  boost your digital skills, Digital Hero is here to help. We
+                  unlock digital potential across Indonesia, empowering you to
+                  transform from ZERO to HERO. Let’s digitalize the
+                  future together!
                 </p>
 
                 <div className="mt-8">
@@ -356,7 +351,7 @@ export default function Home() {
               <div className="lg:w-1/2 flex flex-col ">
                 <img
                   src="/assets/homepage/watch/phone.png"
-                  className="lg:w-[80%] h-[170px] w-[160px] lg:h-auto"
+                  className="lg:w-[90%] h-[170px] w-[160px] lg:h-auto"
                 />
               </div>
             </div>

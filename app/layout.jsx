@@ -1,9 +1,5 @@
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Stars from "@/components/Stars";
-import Footer from "@/components/Footer";
-import AosWrapper from "@/components/AosWrapper";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],

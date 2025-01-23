@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import TypingText from "../TypingText";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import BtnGradient from "../BtnGradient";
 
 const Hero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,7 +14,7 @@ const Hero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section className="flex lg:flex-row flex-col h-screen items-center justify-start lg:justify-normal  lg:mt-8  w-[100%] mt-24 mx-auto relative ">
+    <section className="flex lg:flex-row flex-col h-screen items-center justify-center lg:justify-normal  lg:mt-8  w-[100%] mt-8  mx-auto relative ">
       <div className="lg:w-[60%] w-full">
         <h1 className="2xl:text-[80px] xl:text-5xl lg:text-4xl text-3xl text-center font-bold montserrat">
           Digitalizing <span className="text-gradient">The Future</span>
@@ -62,11 +61,11 @@ const Hero = () => {
               Read More
             </div>
           </Link>
-          <Link href={"/"} className="gradient-border-wrapper ">
-            {/* <div className="rounded-md px-8 py-4 lg:text-2xl font-semibold">
+          <Link href={"/"} className="gradient-border-wrapper relative">
+            <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
+            <div className="rounded-md px-10 py-4 lg:text-2xl font-semibold relative">
               Join Now
-            </div> */}
-            <BtnGradient text={"Join Now"} />
+            </div>
           </Link>
         </div>
       </div>

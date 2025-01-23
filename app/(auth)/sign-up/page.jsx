@@ -1,18 +1,20 @@
 import SideAuth from "@/components/auth/SideAuth";
 import Link from "next/link";
-import React from "react";
 
 const page = () => {
   return (
-    <div className="w-full h-screen grid grid-cols-2 text-color-black">
+    <div className="w-full h-screen grid lg:grid-cols-2 text-color-black">
       <SideAuth>
-        <img src="/assets/auth/sign-up.png" className="w-3/4" />
+        <img src="/assets/auth/sign-up.png" className="w-3/4 hidden lg:block" />
       </SideAuth>
-      <div className="bg-white flex flex-col items-center justify-center relative pt-24 pb-12">
-        <h4 className="text-center 2xl:text-4xl xl:text-[26px] font-semibold">
+      <div className="bg-white flex flex-col items-center justify-center lg:relative absolute -bottom-1/3 lg:bottom-auto w-full pt-12 pb-12 rounded-t-[48px] lg:rounded-none">
+        <h4 className="text-center 2xl:text-4xl xl:text-[26px]  font-semibold">
           Create an account
         </h4>
-        <form action="" className="w-3/5 mt-4 text-[#344054] text-sm ">
+        <form
+          action=""
+          className="lg:w-3/5 w-10/12 mt-4 text-[#344054] text-xs "
+        >
           <div className="flex flex-col gap-2">
             <label htmlFor="name">Full Name</label>
             <div className="gradient-border-wrapper-2 p-2">
@@ -63,7 +65,7 @@ const page = () => {
           </div>
         </form>
 
-        <div className="gradient-border-wrapper-2 p-1 w-3/5 mt-6">
+        <div className="gradient-border-wrapper-2 p-1 lg:w-3/5 w-10/12 mt-6">
           <div className="bg-white rounded-md w-full py-2 flex items-center justify-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,12 +90,12 @@ const page = () => {
                 d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
               />
             </svg>
-            <p className="text-[#2961CD] font-semibold text-sm">
+            <p className="text-[#2961CD] font-semibold text-xs">
               Continue with Google
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-1 mt-4">
+        <div className="flex justify-center items-center gap-1 mt-4 text-sm lg:text-base">
           <p className="text-[#98A2B3]">Already Have An Account ?</p>{" "}
           <Link href={"/login"} className="text-[#2961CD]">
             Login

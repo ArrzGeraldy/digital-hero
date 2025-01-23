@@ -21,7 +21,7 @@ export const journeyDatas = [
     title: "Exclusive Community",
     content:
       "Join a supportive network of ambitious, like-minded individuals where you can share ideas, get advice, and grow together. Connect with future heroes who are all on the same journey.",
-    image: "img-4.png",
+    image: "exlusive.png",
   },
 ];
 
@@ -81,6 +81,7 @@ export const teams = [
     image: "person-3.png",
   },
 ];
+
 export const careers = [
   {
     title: "Be a Catalyst for Change",
@@ -99,5 +100,46 @@ export const careers = [
     content:
       "Your work will directly shape the future of businesses, empowering them to thrive in the digital era. Join a team that values creativity, innovation, and bold action.",
     image: "career-3.png",
+  },
+];
+
+export const qnaDatas = [
+  {
+    title: "What Is AI Business Growth?",
+    content:
+      "Our AI solutions can make help you optimize marketing efforts, improve sales proccess, enhance customer relationship.",
+  },
+  {
+    title: "How can your AI solutions benefit my business?",
+    content:
+      "Our AI solutions can make help you optimize marketing efforts, improve sales proccess, enhance customer relationship.",
+  },
+  {
+    title: "What Is AI Business Growth?",
+    content:
+      "Our AI solutions can make help you optimize marketing efforts, improve sales proccess, enhance customer relationship.",
+  },
+  {
+    title: "What Is AI Business Growth?",
+    content:
+      "Our AI solutions can make help you optimize marketing efforts, improve sales proccess, enhance customer relationship.",
+  },
+];
+
+export const partnersData = [
+  {
+    title: "Training and Skill Development",
+    content:
+      "We are open to partner with institutions to offer training programs, workshops, or digital skill courses for employees, students, or members. This could include programs on digital marketing, coding, project management, and other relevant digital skills.",
+  },
+  {
+    title: "Consultation and Digital Strategy Development",
+    content:
+      "We are open to partner with institutions to offer training programs, workshops, or digital skill courses for employees, students, or members. This could include programs on digital marketing, coding, project management, and other relevant digital skills.",
+  },
+  {
+    title: "Technology Integration and System Development",
+    content:
+      "We are open to partner with institutions to offer training programs, workshops, or digital skill courses for employees, students, or members. This could include programs on digital marketing, coding, project management, and other relevant digital skills.",
   },
 ];

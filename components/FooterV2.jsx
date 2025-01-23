@@ -2,13 +2,7 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import {
-  SiAdobeindesign,
-  SiFacebook,
-  SiInstagram,
-  SiLinkedin,
-  SiTiktok,
-} from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiTiktok } from "react-icons/si";
 
 const FooterV2 = () => {
   const [openCards, setOpenCards] = useState([]);

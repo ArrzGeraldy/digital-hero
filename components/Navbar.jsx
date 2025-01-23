@@ -1,6 +1,5 @@
 "use client";
 import { AlignJustify, User, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -37,17 +36,15 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <nav
-      className={`fixed top-0 w-full  px-5 py-3 flex z-10 justify-between items-center text-white transition-all duration-300 ${
+      className={`fixed top-0 w-full  px-5 py-3 flex z-10 justify-between items-center text-white transition-all duration-300  ${
         isScrolled
           ? "bg-color-black border-b border-gray-700"
           : "bg-transparent"
       }`}
     >
       <Link href={"/"}>
-        <Image
+        <img
           src={"/assets/nav/digital-title.png"}
-          width={225}
-          height={200}
           alt="..."
           className="lg:w-[90%] w-3/5"
         />
