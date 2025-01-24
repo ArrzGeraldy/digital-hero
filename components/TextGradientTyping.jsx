@@ -5,12 +5,12 @@ const TextGradientTyping = ({
   secondText,
   className = "",
   classSpan = "",
+  color = "text-gradient",
 }) => {
   const [displayFirstText, setDisplayFirstText] = useState("");
   const [displaySecondText, setDisplaySecondText] = useState("");
   const [isFirstTyping, setIsFirstTyping] = useState(true);
   const [isSecondTyping, setIsSecondTyping] = useState(false);
-  const [isTypingComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     if (isFirstTyping) {
@@ -49,7 +49,7 @@ const TextGradientTyping = ({
           &nbsp;
         </span>
       )}
-      <span className={`text-gradient ${classSpan}`}>
+      <span className={`${color} ${classSpan}`}>
         {displaySecondText}{" "}
         {isSecondTyping && (
           <span className="border-r-2 border-gray-400 animate-blink inline-block">

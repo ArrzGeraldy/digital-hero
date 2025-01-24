@@ -31,7 +31,7 @@ const FooterV2 = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
   return (
-    <footer className=" bg-color-black relative h-[744px] mt-24 lg:pt-[120px] pt-8 pb-[30px]">
+    <footer className=" bg-color-black relative lg:h-[744px] h-fit mt-24 lg:pt-[120px] pt-8 pb-[30px]">
       <div className="mx-auto max-h-full 2xl:max-w-[calc(1150px+10vw)] xl:w-10/12 px-[5vw] ">
         <div className="flex lg:flex-row flex-col gap-y-4 justify-between items-start">
           <img src="/assets/nav/digital-title.png" className="h-12 lg:h-auto" />

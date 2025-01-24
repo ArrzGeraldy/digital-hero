@@ -7,18 +7,20 @@ import { SplideSlide } from "@splidejs/react-splide";
 import TypingText from "@/components/TypingText";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import MouseScroll from "@/components/MouseScroll";
+import TextGradientTyping from "@/components/TextGradientTyping";
 
 const Page = () => {
   return (
     <main className="h-full relative flex flex-col pb-14">
       <section className="flex lg:w-10/12 w-11/12 mx-auto justify-center flex-col min-h-screen  lg:mt-8 2xl:mt-12 relative">
-        {/* <h4 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center"></h4> */}
-        <TypingText
-          text={
-            "Be The Agent of Transformation Delivering Impacts through Digitalization"
-          }
+        <TextGradientTyping
+          firstText={"Be The Agent of Transformation"}
+          secondText={"Delivering Impacts through Digitalization"}
           className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center"
+          classSpan="block"
+          color="text-white"
         />
+
         <p
           className="2xl:mt-16 mt-12 2xl:text-4xl xl:text-2xl text-xl text-gray-200 lg:text-white lg:font-semibold text-center montserrat"
           data-aos="fade-up"

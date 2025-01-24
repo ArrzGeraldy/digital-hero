@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <div className="w-full h-screen  grid lg:grid-cols-2 text-color-black relative">
       <SideAuth>
-        <img src="/assets/auth/login.png" className="w-3/4 hidden lg:block" />
+        <img src="/assets/auth/login.png" className="w-3/4 mt-16 lg:mt-0" />
       </SideAuth>
       <div className="bg-white flex flex-col items-center justify-center lg:relative absolute w-full bottom-0 lg:bottom-auto rounded-t-[48px] lg:rounded-t-none py-8 lg:py-0">
         <h4 className="text-center 2xl:text-4xl xl:text-[26px] font-semibold">

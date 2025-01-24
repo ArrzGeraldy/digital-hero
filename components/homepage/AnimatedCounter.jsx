@@ -54,9 +54,14 @@ const AnimatedCounter = () => {
   return (
     <h1
       ref={counterRef}
-      className="2xl:text-[140px] xl:text-9xl lg:text-8xl text-6xl font-bold text-center"
+      className="2xl:text-[140px] xl:text-9xl lg:text-8xl text-6xl font-bold text-center relative"
     >
-      {count < target ? Math.floor(count) : "1000+"}
+      {count < target ? Math.floor(count) : "1000"}
+      {count < target ? (
+        ""
+      ) : (
+        <span className="absolute -top-5 -right-8 text-6xl">+</span>
+      )}
     </h1>
   );
 };

@@ -20,7 +20,7 @@ const Page = () => {
             <TextGradientTyping
               firstText={"The Heroes Journey:"}
               secondText={"A Path to Digital Mastery"}
-              className="text-3xl  xl:text-4xl 2xl:text-5xl font-bold montserrat text-center lg:text-start"
+              className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold montserrat text-center lg:text-start"
               classSpan=" block"
             />
 

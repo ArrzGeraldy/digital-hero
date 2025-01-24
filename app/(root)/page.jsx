@@ -15,7 +15,7 @@ export default function Home() {
     <main className="h-full relative lg:w-full w-11/12 mx-auto  pb-14 ">
       <Hero />
 
-      <section className="lg:mt-32 mt-24 lg:w-10/12 w-full mx-auto">
+      <section className="lg:mt-32 mt-8 lg:w-10/12 w-full mx-auto">
         <div data-aos="fade-up">
           <h4 className="2xl:text-6xl xl:text-6xl lg:text-5xl text-3xl font-bold text-center montserrat">
             From <span className="text-gradient">Zero to Hero</span>
@@ -322,14 +322,14 @@ export default function Home() {
           data-aos="fade-up"
           className="gradient-border-wrapper-2  mt-24 w-[83%] 2xl:w-3/4 mx-auto hidden lg:block"
         >
-          <div className="bg-why-gradient grid grid-cols-3  lg:px-4 2xl:px-8  rounded-md lg:py-10 py-6">
-            <div className="col-span-2">
+          <div className="bg-why-gradient flex items-center gap-4 justify-between  lg:px-12   rounded-md lg:py-10 py-6">
+            <div className="w-[60%]">
               <h4 className="text-3xl  xl:text-4xl 2xl:text-5xl font-bold montserrat text-center lg:text-start">
                 Be the Hero of Your{" "}
                 <span className="text-gradient block">Digital Journey</span>
               </h4>
-              <div className="lg:w-[100%]  flex flex-col lg:items-center mt-4">
-                <p className="xl:text-lg 2xl:text-xl text-sm">
+              <div className="lg:w-[100%]  flex flex-col  mt-4">
+                <p className="xl:text-lg 2xl:text-xl text-sm ">
                   Whether you're a business owner or an individual seeking to
                   boost your digital skills, Digital Hero is here to help. We
                   unlock digital potential across Indonesia, empowering you to
@@ -337,11 +337,11 @@ export default function Home() {
                   future together!
                 </p>
 
-                <div className="mt-8 w-ful grid relative">
+                <div className="mt-8 w-full grid relative">
                   <div className="mt-6 opacity-0">
                     <BtnGradient text={"Join Our Community"} />
                   </div>
-                  <div className=" mx-auto w-full flex absolute">
+                  <div className=" mx-auto flex absolute w-3/4">
                     <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
                     <button
                       className={`bg-gradient mx-auto 2xl:px-12 2xl:py-8 px-6 py-4 2xl:text-3xl xl:text-2xl text-base  font-semibold rounded-lg relative w-full`}
@@ -353,12 +353,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col ">
-              <img
-                src="/assets/homepage/watch/phone.png"
-                className="lg:w-[90%] "
-              />
-            </div>
+            <img
+              src="/assets/homepage/watch/phone.png"
+              className="lg:w-[45%] "
+            />
           </div>
         </div>
         <div

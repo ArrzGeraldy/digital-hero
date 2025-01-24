@@ -15,7 +15,7 @@ const MouseScroll = () => {
   }, []);
   return (
     <div
-      className="absolute lg:bottom-10 bottom-0 left-1/2 -translate-x-1/2 h-16 "
+      className="absolute lg:bottom-10 bottom-5 left-1/2 -translate-x-1/2 h-16 "
       hidden={isScrolled}
     >
       <DotLottieReact src="/assets/lottie/s_mouse.lottie" loop autoplay />
