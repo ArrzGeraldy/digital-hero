@@ -1,19 +1,8 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import TextGradientTyping from "../TextGradientTyping";
-import Image from "next/image";
+import MouseScroll from "../MouseScroll";
 
 const Hero = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <section className="flex lg:flex-row flex-col h-screen items-center justify-center   lg:justify-normal  lg:mt-8  mx-auto relative w-full ">
       <div className="lg:w-[60%] w-full">
@@ -72,12 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div
-        className="absolute lg:bottom-10 bottom-0 left-1/2 -translate-x-1/2 h-16 "
-        hidden={isScrolled}
-      >
-        <DotLottieReact src="/assets/lottie/s_mouse.lottie" loop autoplay />
-      </div>
+      <MouseScroll />
     </section>
   );
 };

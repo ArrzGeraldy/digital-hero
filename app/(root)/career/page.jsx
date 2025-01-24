@@ -5,11 +5,13 @@ import CareerCard from "@/components/CareerCard";
 import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
 import TypingText from "@/components/TypingText";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import MouseScroll from "@/components/MouseScroll";
 
 const Page = () => {
   return (
     <main className="h-full relative flex flex-col pb-14">
-      <section className="flex lg:w-10/12 w-11/12 mx-auto justify-center flex-col min-h-screen  lg:mt-8 2xl:mt-12">
+      <section className="flex lg:w-10/12 w-11/12 mx-auto justify-center flex-col min-h-screen  lg:mt-8 2xl:mt-12 relative">
         {/* <h4 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center"></h4> */}
         <TypingText
           text={
@@ -29,6 +31,7 @@ const Page = () => {
         >
           <BtnGradient text={"Make Impact Today!"} />
         </div>
+        <MouseScroll />
       </section>
 
       <section className="mt-12 lg:w-10/12 w-11/12 mx-auto">
