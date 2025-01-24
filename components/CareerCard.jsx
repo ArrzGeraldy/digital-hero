@@ -1,6 +1,9 @@
 const CareerCard = ({ title, content, image }) => {
   return (
-    <div className="xl:px-6 xl:py-6 2xl:px-8 p-4 flex flex-col   bg-why-gradient border-2  border-[#2961CD] rounded-md relative text-center lg:text-start lg:w-full w-[86%] mx-auto">
+    <div
+      data-aos="fade-up"
+      className="xl:px-6 xl:py-6 2xl:px-8 p-4 flex flex-col   bg-why-gradient border-2  border-[#2961CD] rounded-md relative text-center lg:text-start lg:w-full w-[86%] mx-auto"
+    >
       <div className="flex lg:justify-start justify-center  w-full lg:absolute 2xl:-top-[35%] xl:-top-[25%] items-center">
         <img src={`/assets/career/${image}`} className={`2xl:h-52 h-44`} />
       </div>

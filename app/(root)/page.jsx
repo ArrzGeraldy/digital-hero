@@ -320,7 +320,50 @@ export default function Home() {
         </div>
         <div
           data-aos="fade-up"
-          className="gradient-border-wrapper-2  mt-24 w-[83%] 2xl:w-3/4 mx-auto"
+          className="gradient-border-wrapper-2  mt-24 w-[83%] 2xl:w-3/4 mx-auto hidden lg:block"
+        >
+          <div className="bg-why-gradient grid grid-cols-3  lg:px-4 2xl:px-8  rounded-md lg:py-10 py-6">
+            <div className="col-span-2">
+              <h4 className="text-3xl  xl:text-4xl 2xl:text-5xl font-bold montserrat text-center lg:text-start">
+                Be the Hero of Your{" "}
+                <span className="text-gradient block">Digital Journey</span>
+              </h4>
+              <div className="lg:w-[100%]  flex flex-col lg:items-center mt-4">
+                <p className="xl:text-lg 2xl:text-xl text-sm">
+                  Whether you're a business owner or an individual seeking to
+                  boost your digital skills, Digital Hero is here to help. We
+                  unlock digital potential across Indonesia, empowering you to
+                  transform from ZERO to HERO. Let’s digitalize the
+                  future together!
+                </p>
+
+                <div className="mt-8 w-ful grid relative">
+                  <div className="mt-6 opacity-0">
+                    <BtnGradient text={"Join Our Community"} />
+                  </div>
+                  <div className=" mx-auto w-full flex absolute">
+                    <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
+                    <button
+                      className={`bg-gradient mx-auto 2xl:px-12 2xl:py-8 px-6 py-4 2xl:text-3xl xl:text-2xl text-base  font-semibold rounded-lg relative w-full`}
+                    >
+                      Join Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col ">
+              <img
+                src="/assets/homepage/watch/phone.png"
+                className="lg:w-[90%] "
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          className="gradient-border-wrapper-2  mt-24 w-[83%] 2xl:w-3/4 mx-auto lg:hidden block"
         >
           <div className="bg-why-gradient flex flex-col justify-start items-start px-4  rounded-md lg:py-12 py-6">
             <h4 className="2xl:text-5xl xl:text-4xl text-2xl text-center font-bold w-full montserrat">
@@ -329,7 +372,7 @@ export default function Home() {
             </h4>
             <div className="w-[95%] flex flex-col-reverse lg:flex-row lg:gap-16 items-center lg:justify-between lg:mt-8 mt-4 mx-auto">
               <div className="lg:w-[100%]  flex flex-col lg:items-center mt-4 lg:mt-0">
-                <p className="xl:text-lg 2xl:text-2xl text-sm">
+                <p className="xl:text-lg 2xl:text-2xl text-sm text-center lg:text-start">
                   Whether you're a business owner or an individual seeking to
                   boost your digital skills, Digital Hero is here to help. We
                   unlock digital potential across Indonesia, empowering you to
@@ -337,11 +380,11 @@ export default function Home() {
                   future together!
                 </p>
 
-                <div className="mt-8">
-                  <div className="relative mx-auto w-fit ">
+                <div className="mt-8 w-full">
+                  <div className="relative mx-auto lg:w-3/4 w-full flex">
                     <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
                     <button
-                      className={`bg-gradient mx-auto 2xl:px-8 2xl:py-6 lg:px-16 px-6 py-4 2xl:text-2xl xl:text-lg text-base  font-semibold rounded-lg relative `}
+                      className={`bg-gradient mx-auto 2xl:px-12 2xl:py-8 px-6 py-4 2xl:text-3xl xl:text-2xl text-base  font-semibold rounded-lg relative w-full `}
                     >
                       Join Now
                     </button>

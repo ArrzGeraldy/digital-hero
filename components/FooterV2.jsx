@@ -2,7 +2,15 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { SiFacebook, SiInstagram, SiLinkedin, SiTiktok } from "react-icons/si";
+import {
+  SiFacebook,
+  SiInstagram,
+  SiLinkedin,
+  SiThreads,
+  SiTiktok,
+  SiX,
+  SiYoutube,
+} from "react-icons/si";
 
 const FooterV2 = () => {
   const [openCards, setOpenCards] = useState([]);
@@ -144,6 +152,15 @@ const FooterV2 = () => {
             </div>
             <div className="px-1.5 py-1.5 rounded-full bg-white">
               <SiLinkedin size={20} className="text-black" />
+            </div>
+            <div className="px-1.5 py-1.5 rounded-full bg-white">
+              <SiYoutube size={20} className="text-black" />
+            </div>
+            <div className="px-1.5 py-1.5 rounded-full bg-white">
+              <SiX size={20} className="text-black" />
+            </div>
+            <div className="px-1.5 py-1.5 rounded-full bg-white">
+              <SiThreads size={20} className="text-black" />
             </div>
           </div>
         </div>

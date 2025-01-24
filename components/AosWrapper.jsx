@@ -8,7 +8,7 @@ const AosWrapper = ({ children }) => {
   useEffect(() => {
     AOS.init({ duration: 1500, once: true });
   }, []);
-  return <div>{children}</div>;
+  return <div className="overflow-hidden">{children}</div>;
 };
 
 export default AosWrapper;

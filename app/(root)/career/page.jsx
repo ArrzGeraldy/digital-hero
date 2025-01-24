@@ -4,30 +4,42 @@ import { careers } from "../../data";
 import CareerCard from "@/components/CareerCard";
 import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
+import TypingText from "@/components/TypingText";
 
 const Page = () => {
   return (
     <main className="h-full relative flex flex-col pb-14">
-      <section className="flex lg:w-10/12 w-11/12 mx-auto justify-center flex-col min-h-screen  mt-8 2xl:mt-12">
-        <h4 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center">
-          Be The Agent of Transformation Delivering Impacts through
-          Digitalization
-        </h4>
-        <p className="2xl:mt-16 mt-12 2xl:text-4xl xl:text-2xl text-xl text-gray-200 lg:text-white lg:font-semibold text-center montserrat">
+      <section className="flex lg:w-10/12 w-11/12 mx-auto justify-center flex-col min-h-screen  lg:mt-8 2xl:mt-12">
+        {/* <h4 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center"></h4> */}
+        <TypingText
+          text={
+            "Be The Agent of Transformation Delivering Impacts through Digitalization"
+          }
+          className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-center"
+        />
+        <p
+          className="2xl:mt-16 mt-12 2xl:text-4xl xl:text-2xl text-xl text-gray-200 lg:text-white lg:font-semibold text-center montserrat"
+          data-aos="fade-up"
+        >
           Explore our career opportunities now
         </p>
-        <div className="w-full flex justify-center 2xl:mt-16 mt-12">
+        <div
+          className="w-full flex justify-center 2xl:mt-16 mt-12"
+          data-aos="fade-up"
+        >
           <BtnGradient text={"Make Impact Today!"} />
         </div>
       </section>
 
-      <section className="mt-12 lg:w-10/12 w-11/12 mx-auto" data-aos="fade-up">
-        <p className="text-[#00C6FF] 2xl:text-4xl lg:text-2xl text-base font-bold text-center">
-          CAREER AT DIGITAL HERO
-        </p>
-        <h4 className="xl:text-[40px] 2xl:text-[50px] text-[30px] font-bold text-center lg:mt-4 mt-2">
-          Digitalizing Business, Empowering Heroes
-        </h4>
+      <section className="mt-12 lg:w-10/12 w-11/12 mx-auto">
+        <div data-aos="fade-up">
+          <p className="text-[#00C6FF] 2xl:text-4xl lg:text-2xl text-base font-bold text-center">
+            CAREER AT DIGITAL HERO
+          </p>
+          <h4 className="xl:text-[40px] 2xl:text-[50px] text-[30px] font-bold text-center lg:mt-4 mt-2">
+            Digitalizing Business, Empowering Heroes
+          </h4>
+        </div>
         <div className="grid lg:grid-cols-3 2xl:mt-44 xl:mt-36 mt-8  xl:gap-6 2xl:gap-10 gap-y-10">
           {careers.map((career) => (
             <CareerCard

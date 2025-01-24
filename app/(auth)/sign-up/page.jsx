@@ -7,7 +7,7 @@ const page = () => {
       <SideAuth>
         <img src="/assets/auth/sign-up.png" className="w-3/4 hidden lg:block" />
       </SideAuth>
-      <div className="bg-white flex flex-col items-center justify-center lg:relative absolute -bottom-1/3 lg:bottom-auto w-full pt-12 pb-12 rounded-t-[48px] lg:rounded-none">
+      <div className="bg-white flex flex-col items-center justify-center lg:relative absolute bottom-0 lg:bottom-auto w-full pt-12 pb-12 rounded-t-[48px] lg:rounded-none">
         <h4 className="text-center 2xl:text-4xl xl:text-[26px]  font-semibold">
           Create an account
         </h4>

@@ -8,23 +8,23 @@ import TypingText from "@/components/TypingText";
 import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
 import CardToggle from "@/components/CardToggle";
+import TextGradientTyping from "@/components/TextGradientTyping";
 
 const Page = () => {
   return (
     <main className="h-full relative pb-14 lg:w-10/12 w-11/12 mx-auto">
-      <section className="flex h-screen items-center 2xl:mt-8 xl:mt-16 relative mt-48 ">
+      <section className="flex h-screen items-center 2xl:mt-8 xl:mt-16 relative justify-center mt-8 lg:justify-start ">
         <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
           {/* Text Content */}
           <div className="w-full 2xl:w-2/3 lg:w-1/2 space-y-6">
-            <h1 className="text-3xl  xl:text-4xl 2xl:text-5xl font-bold montserrat text-center lg:text-start">
-              The Heroes Journey:{" "}
-              <TypingText
-                text={"A Path to Digital Mastery"}
-                className="text-gradient block"
-              />
-            </h1>
+            <TextGradientTyping
+              firstText={"The Heroes Journey:"}
+              secondText={"A Path to Digital Mastery"}
+              className="text-3xl  xl:text-4xl 2xl:text-5xl font-bold montserrat text-center lg:text-start"
+              classSpan=" block"
+            />
 
-            <div className="hidden lg:block">
+            <div className="hidden lg:block" data-aos="fade-up">
               <p className="text-lg  xl:text-xl 2xl:text-3xl text-gray-300 montserrat">
                 <span className="text-gradient font-semibold">
                   Don't walk this path alone!
@@ -41,14 +41,17 @@ const Page = () => {
           </div>
 
           {/* Image */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center">
+          <div
+            className="w-full lg:w-1/2 flex justify-center items-center"
+            data-aos="fade-left"
+          >
             <img
               src="/assets/journey/hero.png"
               alt="Hero Journey"
               className="lg:w-full w-[90%] max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-3xl object-contain "
             />
           </div>
-          <div className="lg:hidden block">
+          <div className="lg:hidden block" data-aos="fade-up">
             <p className="text-base text-center  xl:text-xl 2xl:text-3xl text-gray-300 montserrat">
               <span className="text-gradient font-semibold">
                 Don't walk this path alone!
@@ -341,7 +344,7 @@ const Page = () => {
           <div className="mt-8 lg:w-2/3 w-[85%] mx-auto flex justify-center">
             <div data-aos="zoom-out">
               <p className="line-through lg:text-xl">Rp 5.000.000</p>
-              <div className="rounded-md px-10 py-4 lg:w-fit w-full bg-white text-black 2xl:text-6xl xl:text-5xl text-3xl font-semibold mt-2 relative">
+              <div className="rounded-md px-10 py-4 lg:w-fit w-full bg-white text-black 2xl:text-6xl xl:text-5xl text-2xl font-semibold mt-2 relative">
                 <p>Rp 2.499.000</p>
                 <img
                   src="/assets/journey/discount.png"

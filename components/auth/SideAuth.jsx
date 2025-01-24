@@ -5,10 +5,10 @@ import Stars from "../Stars";
 
 const SideAuth = ({ children }) => {
   return (
-    <div className="relative  flex flex-col lg:flex-row items-center lg:justify-center bg-auth">
+    <div className="relative flex flex-col lg:flex-row items-center lg:justify-center bg-auth">
       <Link
         href={"/"}
-        className="lg:absolute lg:top-5 lg:left-7 z-10 mt-6 lg:mt-0"
+        className="lg:absolute lg:top-5 lg:left-7 z-10 mt-6 lg:mt-0 relative"
       >
         <Image
           src={"/assets/nav/digital-title.png"}
@@ -17,7 +17,7 @@ const SideAuth = ({ children }) => {
           alt="..."
         />
       </Link>
-      <div className="lg:hidden flex flex-col items-center">
+      <div className="lg:hidden flex flex-col items-center mt-8">
         <p className="text-gray-300 w-1/2 text-center">Welcome!</p>
         <p className="text-gray-300 w-3/4 text-center">
           Take the first step now and transform the future through digital

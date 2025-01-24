@@ -36,9 +36,9 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <nav
-      className={`fixed top-0 w-full  px-5 py-3 flex z-10 justify-between items-center text-white transition-all duration-300  ${
+      className={`fixed w-full h-[60px] lg:h-[80px] px-5 py-3 flex z-10 justify-between items-center text-white transition-all duration-300 ${
         isScrolled
-          ? "bg-color-black border-b border-gray-700"
+          ? "bg-color-black border-b border-gray-700 fixed top-0 "
           : "bg-transparent"
       }`}
     >
@@ -51,7 +51,7 @@ const Navbar = () => {
       </Link>
       <div
         ref={btnRef}
-        className="w-3/4 h-screen border-s border-gray-600 bg-color-black lg:hidden fixed top-0 right-0 sidebar px-4"
+        className="w-3/4 h-screen border-s border-gray-600 bg-color-black lg:hidden fixed top-0 sidebar px-4"
       >
         <button onClick={handleSideBar} className="absolute right-4 top-4">
           <X size={28} />
@@ -69,6 +69,21 @@ const Navbar = () => {
               {link.text}
             </Link>
           ))}
+
+          <div className="flex flex-col w-full gap-4">
+            <Link
+              href={"/login"}
+              className="gradient-border-wrapper text-center"
+            >
+              <div className="rounded-md px-10 py-2 bg-color-black">Login</div>
+            </Link>
+            <Link
+              href={"/sign-up"}
+              className="rounded-md px-10 py-2 bg-color-blue text-center"
+            >
+              Register
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex gap-4 lg:hidden">

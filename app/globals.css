@@ -108,12 +108,13 @@ body {
 }
 
 .sidebar {
-  transform: translateX(1000px);
+  right: -100%;
   transition: ease 0.3s;
+  max-width: 75%;
 }
 
 .sidebar-show {
-  transform: translateX(0px);
+  right: 0;
 }
 
 .card-3 {
@@ -253,4 +254,19 @@ body {
   max-height: 100%;
   max-width: calc(1150px + 10vw);
   padding: 0 5vw;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  transition: ease 0.3s;
+  z-index: 99;
 }

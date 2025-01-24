@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         cz-shortcut-listen="false"
-        className={`${poppins.variable} ${montserrat.variable} text-white antialiased bg-ellipse flex flex-col min-h-screen w-full`}
+        className={`${poppins.variable} ${montserrat.variable} text-white antialiased bg-ellipse`}
       >
         {children}
       </body>
