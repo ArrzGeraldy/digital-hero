@@ -13,6 +13,10 @@ const links = [
     text: "Career",
     href: "/career",
   },
+  {
+    text: "Contact",
+    href: "/contact",
+  },
 ];
 
 const Navbar = () => {
@@ -63,7 +67,7 @@ const Navbar = () => {
               key={i}
               href={link.href}
               className={`pb-2 w-full text-center border-b ${
-                pathname == link.href && "text-[#00C6FF]"
+                pathname == link.href && "text-gradient"
               }`}
             >
               {link.text}
@@ -79,7 +83,7 @@ const Navbar = () => {
             </Link>
             <Link
               href={"/sign-up"}
-              className="rounded-md px-10 py-2 bg-color-blue text-center"
+              className="rounded-md px-10 py-2  bg-gradient text-center"
             >
               Register
             </Link>
@@ -100,9 +104,7 @@ const Navbar = () => {
             key={i}
             href={link.href}
             className={`pb-2 hover:border-b  transition-all duration-300 ${
-              pathname == link.href
-                ? "text-[#00C6FF] border-b hover:text-[#00C6FF] "
-                : "nav-link"
+              pathname == link.href ? "text-gradient border-b " : "nav-link"
             } `}
           >
             {link.text}
@@ -113,7 +115,7 @@ const Navbar = () => {
         <Link href={"/login"} className="gradient-border-wrapper">
           <div className="rounded-md px-10 py-2 bg-color-black">Login</div>
         </Link>
-        <Link href={"/sign-up"} className="rounded-md px-10 py-2 bg-color-blue">
+        <Link href={"/sign-up"} className="rounded-md px-10 py-2 bg-gradient">
           Register
         </Link>
       </div>

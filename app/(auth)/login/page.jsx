@@ -9,7 +9,7 @@ const Page = () => {
       </SideAuth>
       <div className="bg-white flex flex-col items-center justify-center lg:relative absolute w-full bottom-0 lg:bottom-auto rounded-t-[48px] lg:rounded-t-none py-8 lg:py-0">
         <h4 className="text-center 2xl:text-4xl xl:text-[26px] font-semibold">
-          Create an account
+          Login
         </h4>
         <form
           action=""

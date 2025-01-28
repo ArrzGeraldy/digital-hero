@@ -60,7 +60,9 @@ const AnimatedCounter = () => {
       {count < target ? (
         ""
       ) : (
-        <span className="absolute -top-5 -right-8 text-6xl">+</span>
+        <span className="absolute lg:-top-5 -top-3  lg:-right-8 lg:text-6xl text-3xl ">
+          +
+        </span>
       )}
     </h1>
   );

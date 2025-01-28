@@ -9,8 +9,11 @@ const SideAuth = ({ children }) => {
     <div className="relative flex flex-col lg:flex-row items-center lg:justify-center bg-auth min-h-screen">
       <div className="lg:absolute lg:top-5 lg:left-7 z-10 mt-6 lg:mt-0 relative text-white grid grid-cols-12 items-center justify-center w-full">
         {/* Back Button (di kiri) */}
-        <Link href={"/"} className="col-span-3 ms-4 lg:ms-0 lg:col-span-1">
-          <ArrowLeft size={24} />
+        <Link
+          href={"/"}
+          className="col-span-3 ms-4 lg:ms-0 lg:col-span-1 bg-white w-fit p-1 rounded-full"
+        >
+          <ArrowLeft size={28} className="text-color-black" />
         </Link>
 
         {/* Centered Image */}

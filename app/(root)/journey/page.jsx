@@ -9,6 +9,7 @@ import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
 import CardToggle from "@/components/CardToggle";
 import TextGradientTyping from "@/components/TextGradientTyping";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -34,9 +35,15 @@ const Page = () => {
                 mistakes we have had. Start your journey with expert guidance
                 along the way to fast-track your success.
               </p>
-              <div className="self-start w-fit mt-8">
-                <BtnGradient text={"Start My Journey"} />
-              </div>
+              <Link
+                href={"#benefit"}
+                className="gradient-border-wrapper relative block w-fit mt-6"
+              >
+                <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
+                <div className="rounded-md px-10 py-4 lg:text-2xl font-semibold relative text-center">
+                  Start My Journey
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -62,13 +69,13 @@ const Page = () => {
               along the way to fast-track your success.
             </p>
             <div className="self-start w-fit mx-auto mt-8">
-              <BtnGradient text={"Start My Journey"} />
+              <BtnGradient href={"#benefit"} text={"Start My Journey"} />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mt-32">
+      <section className="pt-32" id="benefit">
         <div data-aos="fade-up">
           <h4 className="text-3xl md:text-4xl xl:text-[40px] 2xl:text-[60px] font-bold text-center montserrat">
             What Will I
@@ -144,10 +151,8 @@ const Page = () => {
           data-aos="fade-up"
         >
           {" "}
-          This roadmap is designed to be{" "}
-          <span className="text-gradient">
-            practical, easy to implement, and actionable.
-          </span>
+          This Roadmap is Designed to be{" "}
+          <span className="text-gradient">Practical, Easy, and Actionable</span>
         </h4>
 
         <p
@@ -187,7 +192,7 @@ const Page = () => {
           consultation.
         </p>
         <div className="w-full flex justify-center mt-12" data-aos="zoom-in">
-          <BtnGradient text={"Consult With Our Team"} />
+          <BtnGradient href="/contact" text={"Consult With Our Team"} />
         </div>
       </section>
 
@@ -200,10 +205,7 @@ const Page = () => {
           who are experts in the digital landscapes across diverse industries
         </h4>
 
-        <div
-          className="mt-12 grid lg:grid-cols-3 gap-8 2xl:gap-16 w-[90%] mx-auto"
-          data-aos="zoom-in"
-        >
+        <div className="mt-12 grid lg:grid-cols-3 gap-8 2xl:gap-16 w-[90%] mx-auto">
           {teams.map((team) => (
             <TeamCard
               key={team.name}
@@ -279,9 +281,9 @@ const Page = () => {
           ))}
         </div>
       </section>
-      <section className="mt-32 lg:w-2/3 mx-auto">
+      <section className="mt-32 lg:w-3/5 mx-auto">
         <h4
-          className="2xl:text-6xl xl:text-5xl lg:text-[40px] text-3xl font-bold text-center  montserrat"
+          className="text-3xl md:text-4xl xl:text-[40px] 2xl:text-[60px] font-bold text-center montserrat"
           data-aos="fade-up"
         >
           Ready to be a Digital Hero?
@@ -291,15 +293,15 @@ const Page = () => {
           className="px-4 pt-6 2xl:pt-10 pb-16 flex flex-col mt-8  bg-why-gradient border-2 border-[#2961CD] rounded-md"
           data-aos="fade-up"
         >
-          <h4 className="2xl:text-[50px] xl:text-[40px] text-3xl font-bold  text-gradient text-center montserrat">
+          <h4 className="2xl:text-[50px] xl:text-[40px] text-2xl font-bold  text-gradient text-center montserrat">
             The Heroes Journey Batch 1
           </h4>
-          <p className="2xl:text-[30px]  xl:text-xl text-center w-[90%] mx-auto">
+          <p className="2xl:text-2xl lg:text-xl text-sm text-center lg:w-[90%] mx-auto">
             {" "}
             Register now and Implement our Framework to Your Journey and Win
           </p>
 
-          <div className="mt-12 flex flex-col lg:flex-row  items-start   lg:w-auto lg:mx-auto gap-4 2xl:text-xl xl:text-base text-xs">
+          <div className="mt-6 lg:mt-12 flex flex-col lg:flex-row  items-start   lg:w-auto lg:mx-auto gap-4 2xl:text-lg xl:text-sm text-xs">
             <div className="rounded-full  px-6 py-2.5  bg-[#3853A4]">
               Proven Best-practiced Frameworks{" "}
             </div>
@@ -307,7 +309,7 @@ const Page = () => {
               Brand Checkup Hands-on
             </div>
           </div>
-          <div className="lg:mt-8 mt-4 flex flex-col lg:flex-row  items-start  lg:w-auto lg:mx-auto gap-4   2xl:text-xl xl:text-base text-xs">
+          <div className="lg:mt-8 mt-4 flex flex-col lg:flex-row  items-start  lg:w-auto lg:mx-auto gap-4   2xl:text-lg xl:text-sm text-xs">
             <div className="rounded-full px-6 py-2.5  bg-[#3853A4]">
               Experience 20+ Digital Marketing Templates
             </div>
@@ -316,7 +318,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="mt-16 pb-12 grid gap-y-8 w-[90%] mx-auto border-b-2 2xl:text-[32px] lg:text-2xl text-sm">
+          <div className="mt-16 pb-12 grid gap-y-8 w-[90%] mx-auto border-b-2 2xl:text-2xl lg:text-2xl text-sm">
             <div className="flex items-center gap-4">
               <Check size={28} className="text-xs lg:block hidden" />{" "}
               <Check size={20} className="text-xs lg:hidden block" />{" "}
@@ -344,7 +346,7 @@ const Page = () => {
           <div className="mt-8 lg:w-2/3 w-[85%] mx-auto flex justify-center">
             <div data-aos="zoom-out">
               <p className="line-through lg:text-xl">Rp 5.000.000</p>
-              <div className="rounded-md px-10 py-4 lg:w-fit w-full bg-white text-black 2xl:text-6xl xl:text-5xl text-2xl font-semibold mt-2 relative">
+              <div className="rounded-md px-10 py-4 lg:w-fit w-full bg-white text-black 2xl:text-5xl xl:text-5xl text-2xl font-semibold mt-2 relative">
                 <p>Rp 2.499.000</p>
                 <img
                   src="/assets/journey/discount.png"
@@ -355,7 +357,12 @@ const Page = () => {
           </div>
 
           <div className="w-full flex justify-center mt-12" data-aos="zoom-out">
-            <BtnGradient text={"Register Now"} />
+            <BtnGradient
+              className="2xl:px-10 2xl:py-6 px-6 py-4"
+              size="2xl:text-2xl lg::text-xl text-base"
+              href="/sign-up"
+              text={"Register Now"}
+            />
           </div>
           <p className="text-center mt-6">
             Learn Now and Let’s Digitalize The Future!

@@ -9,13 +9,17 @@ import CardToggle from "@/components/CardToggle";
 import Hero from "@/components/homepage/Hero";
 import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="h-full relative lg:w-full w-11/12 mx-auto  pb-14 ">
       <Hero />
 
-      <section className="lg:mt-32 mt-8 lg:w-10/12 w-full mx-auto">
+      <section
+        id="zero-hero"
+        className="lg:pt-32 pt-8 lg:w-10/12 w-full mx-auto"
+      >
         <div data-aos="fade-up">
           <h4 className="2xl:text-6xl xl:text-6xl lg:text-5xl text-3xl font-bold text-center montserrat">
             From <span className="text-gradient">Zero to Hero</span>
@@ -48,10 +52,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-44 hidden lg:block" data-aos="fade-up">
+        <div
+          id="testimonial"
+          className="mt-28 pt-16 hidden lg:block"
+          data-aos="fade-up"
+        >
           <ReviewSlider />
         </div>
-        <div className="mt-6 lg:hidden block" data-aos="fade-up">
+        <div
+          id="testimonial"
+          className="mt-6 lg:hidden block"
+          data-aos="fade-up"
+        >
           <SliderMobile>
             {[...Array(2)].map((_, i) => (
               <SplideSlide key={i}>
@@ -230,15 +242,21 @@ export default function Home() {
             </h4>
             <div className=" lg:w-[60%] w-[90%] 2xl:mt-10 xl:mt-6  flex lg:gap-8 gap-4 justify-center font-semibold  ">
               <button className="gradient-border-wrapper lg:w-[40%] w-[42%] 2xl:text-2xl xl:text-xl text-xs font-semibold">
-                <p className="2xl:py-6 xl:py-4 py-4  rounded-md px-4  bg-[#00052a] ">
+                <Link
+                  href="#testimonial"
+                  className="2xl:py-6 xl:py-4 py-4  rounded-md px-4  bg-[#00052a] block"
+                >
                   Watch Others
-                </p>
+                </Link>
               </button>
               <div className="relative lg:w-[40%] w-[42%]  rounded-lg  font-semibold">
                 <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
-                <button className="bg-gradient 2xl:py-6 xl:py-4 py-4 w-full rounded-lg 2xl:text-2xl xl:text-xl text-xs relative font-semibold">
+                <Link
+                  href={"/journey"}
+                  className="bg-gradient 2xl:py-6 xl:py-4 py-4 w-full rounded-lg 2xl:text-2xl xl:text-xl text-xs relative font-semibold block text-center"
+                >
                   I'm The Winner!
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -257,7 +275,7 @@ export default function Home() {
           expert guidance along the way to fast-track your success.
         </p>
         <div className="w-full flex items-center lg:mt-16 mt-10">
-          <BtnGradient text={"Start My Journey"} />
+          <BtnGradient href="/journey" text={"Start My Journey"} />
         </div>
 
         {/* card */}
@@ -273,7 +291,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lg:mt-44 mt-24 lg:w-10/12 mx-auto" data-aos="fade-up">
+      <section
+        id="partner-with-us"
+        className="lg:pt-44  mt-12 pt-12 lg:w-10/12 mx-auto"
+        data-aos="fade-up"
+      >
         <h4 className="2xl:text-6xl xl:text-4xl lg:text-4xl text-3xl font-bold text-center montserrat">
           Looking to Make an Impact?{" "}
           <span className="text-gradient block lg:inline">
@@ -286,7 +308,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full flex items-center lg:mt-12 mt-8">
-            <BtnGradient text={"Let's Collabarate!"} />
+            <BtnGradient href="/contact" text={"Let's Collabarate!"} />
           </div>
           <div
             data-aos="fade-up"
@@ -315,7 +337,7 @@ export default function Home() {
             Heroes Were Born!
           </p>
           <div className="mt-6">
-            <BtnGradient text={"Join Our Community"} />
+            <BtnGradient href="/sign-up" text={"Join Our Community"} />
           </div>
         </div>
         <div
@@ -337,18 +359,14 @@ export default function Home() {
                   future together!
                 </p>
 
-                <div className="mt-8 w-full grid relative">
-                  <div className="mt-6 opacity-0">
-                    <BtnGradient text={"Join Our Community"} />
-                  </div>
-                  <div className=" mx-auto flex absolute w-3/4">
-                    <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
-                    <button
-                      className={`bg-gradient mx-auto 2xl:px-12 2xl:py-8 px-6 py-4 2xl:text-3xl xl:text-2xl text-base  font-semibold rounded-lg relative w-full`}
-                    >
-                      Join Now
-                    </button>
-                  </div>
+                <div className="flex relative lg:w-4/6 2xl:w-1/2 mt-6">
+                  <span className="bounce-btn absolute inline-flex h-full p-4 w-full rounded-lg bg-gradient opacity-75"></span>
+                  <Link
+                    href={"/sign-up"}
+                    className={`bg-gradient mx-auto 2xl:px-10 2xl:py-6 px-6 py-4 2xl:text-3xl xl:text-2xl text-base  font-semibold rounded-lg relative w-full block text-center`}
+                  >
+                    Join Now
+                  </Link>
                 </div>
               </div>
             </div>

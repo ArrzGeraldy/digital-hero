@@ -4,8 +4,7 @@ import { careers } from "../../data";
 import CareerCard from "@/components/CareerCard";
 import SliderMobile from "@/components/SliderMobile";
 import { SplideSlide } from "@splidejs/react-splide";
-import TypingText from "@/components/TypingText";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 import MouseScroll from "@/components/MouseScroll";
 import TextGradientTyping from "@/components/TextGradientTyping";
 
@@ -31,7 +30,7 @@ const Page = () => {
           className="w-full flex justify-center 2xl:mt-16 mt-12"
           data-aos="fade-up"
         >
-          <BtnGradient text={"Make Impact Today!"} />
+          <BtnGradient href="#featured" text={"Make An Impact Today"} />
         </div>
         <MouseScroll />
       </section>
@@ -83,7 +82,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="mt-32 w-10/12 mx-auto">
+      <section id="featured" className="pt-32 w-10/12 mx-auto">
         <div data-aos="fade-up">
           <h4 className="2xl:text-6xl xl:text-5xl lg:text-[40px] text-3xl font-bold   text-gradient text-center montserrat">
             Featured Opening Jobs
@@ -134,23 +133,37 @@ const Page = () => {
             </div>
           ))}
         </div>
-
-        <p
-          className="mt-16 xl:text-2xl 2xl:text-4xl w-[90%] mx-auto text-xl text-center text-gray-200"
-          data-aos="zoom-in"
+        <div
+          data-aos="fade-up"
+          className="lg:w-[85%] w-full mx-auto lg:mt-32 mt-44 relative"
         >
-          The impact becomes clear only when you’re part of the journey.
-        </p>
+          <img
+            src="/assets/homepage/watch/watch.png"
+            className="w-full lg:h-auto rounded-lg hidden lg:block"
+          />
+          <img
+            src="/assets/homepage/watch/watch-2.png"
+            className="w-full lg:h-auto rounded-lg lg:hidden block"
+          />
+          <div className="flex  flex-col  items-center absolute px-4 w-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <h4 className="xl:text-2xl 2xl:text-4xl  w-[90%] mx-auto  text-center text-gray-200">
+              The impact becomes clear only when you’re part of the journey.
+            </h4>
+            <h4 className="xl:text-2xl 2xl:text-4xl  w-[90%] mx-auto  text-center text-gray-200">
+              You will never know until you experienced it
+            </h4>
+          </div>
+        </div>
       </section>
 
-      <section className="mt-32 pb-28">
-        <h4
+      <section className="mt-28 pb-28">
+        {/* <h4
           className="2xl:text-[50px] lg:text-[40px] text-3xl font-bold text-center  text-gradient montserrat lg:w-10/12 mx-auto"
           data-aos="fade-up"
         >
           You will never know until you experienced it
-        </h4>
-        <div className="lg:hidden block">
+        </h4> */}
+        <div data-aos="fade-up" className="lg:hidden block">
           <SliderMobile>
             {[...Array(3)].map((_, i) => (
               <SplideSlide key={i}>
@@ -178,7 +191,10 @@ const Page = () => {
             ))}
           </SliderMobile>
         </div>
-        <div className="mt-16 overflow-x-hidden whitespace-nowrap card-container lg:block hidden">
+        <div
+          data-aos="fade-up"
+          className="mt-16 overflow-x-hidden whitespace-nowrap card-container lg:block hidden"
+        >
           <div className="cards-slide-left">
             {[...Array(5)].map((_, i) => (
               <div
@@ -232,7 +248,10 @@ const Page = () => {
             ))}
           </div>
         </div>
-        <div className="mt-16 overflow-x-hidden whitespace-nowrap card-container  lg:block hidden">
+        <div
+          data-aos="fade-up"
+          className="mt-16 overflow-x-hidden whitespace-nowrap card-container  lg:block hidden"
+        >
           <div className="cards-slide-right">
             {[...Array(5)].map((_, i) => (
               <div
