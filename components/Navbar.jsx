@@ -104,7 +104,7 @@ const Navbar = () => {
             key={i}
             href={link.href}
             className={`pb-2 hover:border-b  transition-all duration-300 ${
-              pathname == link.href ? "text-gradient border-b " : "nav-link"
+              pathname == link.href ? "text-gradient-2 border-b " : "nav-link"
             } `}
           >
             {link.text}

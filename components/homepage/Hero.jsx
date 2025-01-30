@@ -3,22 +3,23 @@ import Link from "next/link";
 import TextGradientTyping from "../TextGradientTyping";
 import MouseScroll from "../MouseScroll";
 import dynamic from "next/dynamic";
+import Globe from "../Globe";
 
-const EarthVisualization = dynamic(() => import("../EarthScene"), {
+const Globe3D = dynamic(() => import("../Globe"), {
   ssr: false,
 });
 const Hero = () => {
   return (
-    <section className="flex lg:flex-row flex-col h-screen items-center justify-center   lg:justify-normal  lg:mt-8 mt-4  mx-auto relative w-full ">
+    <section className="flex lg:flex-row flex-col h-screen items-center justify-center   lg:justify-normal  lg:mt-8 mt-8  mx-auto relative w-full ">
       <div className="lg:w-[60%] w-full">
         <TextGradientTyping
-          className="2xl:text-[80px] xl:text-5xl lg:text-4xl text-[44px]  text-center font-bold montserrat tracking-wider"
-          classSpan="block"
+          className="2xl:text-[65px] xl:text-5xl lg:text-4xl text-[44px]  text-center font-bold montserrat tracking-wider"
+          classSpan="block lg:inline"
           firstText={"Digitalizing"}
           secondText={"The Future"}
         />
         <div className="hidden lg:block" data-aos="fade-up">
-          <p className="2xl:text-4xl xl:text-2xl text-xl text-gray-300 w-3/4 mx-auto mt-8 text-center montserrat">
+          <p className="2xl:text-3xl xl:text-2xl text-xl text-gray-300 w-3/4 mx-auto mt-8 text-center montserrat">
             Unlocking Full Digital Potential of Businesses and Individuals in
             Indonesia
           </p>
@@ -40,14 +41,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[40%] w-[80%] mt-6 lg:mt-0">
-        {/* <img
-          width={300}
-          height={300}
-          src="/assets/homepage/hero/earth-2.png"
-          className="w-full h-auto"
-        /> */}
-        <EarthVisualization />
+      <div className="lg:w-[40%] w-[90%] mt-6 lg:mt-0">
+        <Globe3D />
       </div>
 
       <div className="block lg:hidden">

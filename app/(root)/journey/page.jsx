@@ -10,6 +10,7 @@ import { SplideSlide } from "@splidejs/react-splide";
 import CardToggle from "@/components/CardToggle";
 import TextGradientTyping from "@/components/TextGradientTyping";
 import Link from "next/link";
+import MouseScroll from "@/components/MouseScroll";
 
 const Page = () => {
   return (
@@ -73,6 +74,7 @@ const Page = () => {
             </div>
           </div>
         </div>
+        <MouseScroll />
       </section>
 
       <section className="pt-32" id="benefit">
@@ -152,7 +154,9 @@ const Page = () => {
         >
           {" "}
           This Roadmap is Designed to be{" "}
-          <span className="text-gradient">Practical, Easy, and Actionable</span>
+          <span className="text-gradient block mt-1">
+            Practical, Easy, and Actionable
+          </span>
         </h4>
 
         <p

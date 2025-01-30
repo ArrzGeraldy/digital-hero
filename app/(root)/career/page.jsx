@@ -56,7 +56,7 @@ const Page = () => {
         </div>
 
         <div
-          className="lg:w-[93%] w-full mx-auto mt-40 relative"
+          className="lg:w-[93%] w-full mx-auto lg:mt-40 mt-24 relative"
           data-aos="fade-up"
         >
           <img
@@ -67,15 +67,18 @@ const Page = () => {
             src="/assets/homepage/watch/watch.png"
             className="h-44 lg:h-auto mx-auto hidden lg:block"
           />
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full ">
             <h4 className="text-center text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl  font-bold">
               Our Vision
             </h4>
-            <p className="lg:mt-4 2xl:mt-8 mt-2  text-xs w-10/12 xl:text-xl 2xl:text-2xl text-center 2xl:w-1/2 xl:w-[60%] mx-auto">
+            <p
+              className="lg:mt-4 2xl:mt-8 mt-2  text-sm xl:text-2xl 2xl:text-4xl text-center 
+             w-[70%] mx-auto text-gray-200"
+            >
               We empower companies to unlock their digital potential and
               individuals to build future-ready skills.
             </p>
-            <p className="lg:mt-8 mt-4 text-xs w-10/12  xl:text-xl 2xl:text-2xl text-center mx-auto">
+            <p className="lg:mt-8 mt-4 text-xs w-10/12 text-gray-200  xl:text-xl 2xl:text-3xl text-center mx-auto">
               Dionysius Sentausa- Founder & CEO of Digital Hero
             </p>
           </div>
@@ -135,7 +138,7 @@ const Page = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="lg:w-[85%] w-full mx-auto lg:mt-32 mt-44 relative"
+          className="lg:w-[85%] w-full mx-auto lg:mt-32 mt-24 relative"
         >
           <img
             src="/assets/homepage/watch/watch.png"
@@ -146,17 +149,21 @@ const Page = () => {
             className="w-full lg:h-auto rounded-lg lg:hidden block"
           />
           <div className="flex  flex-col  items-center absolute px-4 w-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h4 className="xl:text-2xl 2xl:text-4xl  w-[90%] mx-auto  text-center text-gray-200">
-              The impact becomes clear only when you’re part of the journey.
+            <h4 className="text-sm xl:text-2xl 2xl:text-4xl w-[90%] text-center text-gray-200 mx-auto">
+              The impact becomes clear only when you’re part of the journey.{" "}
+              <span className="lg:block">
+                You will never know until you experienced it
+              </span>
             </h4>
-            <h4 className="xl:text-2xl 2xl:text-4xl  w-[90%] mx-auto  text-center text-gray-200">
-              You will never know until you experienced it
-            </h4>
+
+            <p className="xl:text-xl 2xl:text-3xl text-xs  w-[90%] mx-auto  text-center text-gray-200 2xl:mt-12 xl:mt-6 mt-4">
+              Digital Hero Team - Agent of Change
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="mt-28 pb-28">
+      <section className="mt-12 ">
         {/* <h4
           className="2xl:text-[50px] lg:text-[40px] text-3xl font-bold text-center  text-gradient montserrat lg:w-10/12 mx-auto"
           data-aos="fade-up"
