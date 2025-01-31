@@ -12,7 +12,7 @@ const page = () => {
     ) {
       return;
     }
-    if (e.target.id == "link-google") return;
+    if (e.target.id == "inpur-form") return;
     const touchStartY = e.touches[0].clientY;
     e.currentTarget.dataset.touchStartY = touchStartY;
   };
@@ -23,7 +23,7 @@ const page = () => {
     ) {
       return;
     }
-    if (e.target.id == "link-google") return;
+    if (e.target.id == "inpur-form") return;
     const touchStartY = parseFloat(e.currentTarget.dataset.touchStartY);
     const currentTouchY = e.touches[0].clientY;
     const translateY = Math.max(0, currentTouchY - touchStartY);
@@ -35,7 +35,7 @@ const page = () => {
     ) {
       return;
     }
-    if (e.target.id == "link-google") return;
+    if (e.target.id == "inpur-form") return;
     const touchStartY = parseFloat(e.currentTarget.dataset.touchStartY);
     const currentTouchY = e.changedTouches[0].clientY;
 
@@ -52,7 +52,7 @@ const page = () => {
         <img src="/assets/auth/sign-up.png" className="w-3/4 mt-16 lg:mt-0" />
       </SideAuth>
       <div
-        className={`bg-white flex flex-col items-center justify-center lg:relative absolute bottom-0 lg:bottom-auto w-full lg:pt-10 py-6  rounded-t-[48px] lg:rounded-none transition-transform duration-300 ${
+        className={`bg-white flex flex-col items-center justify-center lg:relative absolute bottom-0 lg:bottom-auto w-full lg:pt-10 py-6  rounded-t-[48px] lg:rounded-none transition-transform duration-300 z-20 ${
           isSlidUp ? "translate-y-0" : "translate-y-1/3 lg:translate-y-0"
         } `}
         onTouchStart={handleTouchStart}

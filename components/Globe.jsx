@@ -156,7 +156,6 @@ const Globe = () => {
       atmosphere.material.dispose();
 
       renderer.dispose();
-      // Remove canvas from DOM
       if (container.contains(renderer.domElement)) {
         container.removeChild(renderer.domElement);
       }

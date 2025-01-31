@@ -293,7 +293,7 @@ export default function Home() {
 
       <section
         id="partner-with-us"
-        className="lg:pt-44  mt-12 pt-12 lg:w-10/12 mx-auto"
+        className="lg:pt-52 lg:mt-0  mt-12 pt-12 lg:w-10/12 mx-auto"
         data-aos="fade-up"
       >
         <h4 className="2xl:text-6xl xl:text-4xl lg:text-4xl text-3xl font-bold text-center montserrat">

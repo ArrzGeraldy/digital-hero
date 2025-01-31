@@ -3,7 +3,6 @@ import Link from "next/link";
 import TextGradientTyping from "../TextGradientTyping";
 import MouseScroll from "../MouseScroll";
 import dynamic from "next/dynamic";
-import Globe from "../Globe";
 
 const Globe3D = dynamic(() => import("../Globe"), {
   ssr: false,
@@ -41,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[40%] w-[90%] mt-6 lg:mt-0">
+      <div className="lg:w-[40%] w-[90%]">
         <Globe3D />
       </div>
 

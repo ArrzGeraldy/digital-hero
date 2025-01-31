@@ -209,7 +209,7 @@ const Page = () => {
           who are experts in the digital landscapes across diverse industries
         </h4>
 
-        <div className="mt-12 grid lg:grid-cols-3 gap-8 2xl:gap-16 w-[90%] mx-auto">
+        <div className="lg:mt-12  grid lg:grid-cols-3 gap-6 2xl:gap-16 w-[90%] mx-auto">
           {teams.map((team) => (
             <TeamCard
               key={team.name}
@@ -285,7 +285,7 @@ const Page = () => {
           ))}
         </div>
       </section>
-      <section className="mt-32 lg:w-3/5 mx-auto">
+      <section className="lg:mt-32 mt-20 lg:w-3/5 mx-auto">
         <h4
           className="text-3xl md:text-4xl xl:text-[40px] 2xl:text-[60px] font-bold text-center montserrat"
           data-aos="fade-up"

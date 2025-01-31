@@ -16,20 +16,28 @@ const Contact = () => {
 
   const handleTouchStart = (e) => {
     if (
-      ["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName)
+      ["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A", "SPAN"].includes(
+        e.target.tagName
+      )
     ) {
       return;
     }
+    if (e.target.id == "inpur-form") return;
+
     const touchStartY = e.touches[0].clientY;
     e.currentTarget.dataset.touchStartY = touchStartY;
   };
 
   const handleTouchMove = (e) => {
     if (
-      ["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName)
+      ["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A", "SPAN"].includes(
+        e.target.tagName
+      )
     ) {
       return;
     }
+    if (e.target.id == "inpur-form") return;
+
     const touchStartY = parseFloat(e.currentTarget.dataset.touchStartY);
     const currentTouchY = e.touches[0].clientY;
     const translateY = Math.max(0, currentTouchY - touchStartY);
@@ -37,10 +45,14 @@ const Contact = () => {
 
   const handleTouchEnd = (e) => {
     if (
-      ["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName)
+      ["INPUT", "SELECT", "TEXTAREA", "BUTTON", "A", "SPAN"].includes(
+        e.target.tagName
+      )
     ) {
       return;
     }
+    if (e.target.id == "inpur-form") return;
+
     const touchStartY = parseFloat(e.currentTarget.dataset.touchStartY);
     const currentTouchY = e.changedTouches[0].clientY;
 
@@ -61,7 +73,7 @@ const Contact = () => {
         </div>
       </SideAuth>
       <div
-        className={`bg-white flex flex-col items-center justify-center lg:relative absolute bottom-0 lg:bottom-auto w-full lg:pt-12 py-6 pb-12 rounded-t-[48px] lg:rounded-none transition-transform duration-300 ${
+        className={`bg-white flex flex-col items-center justify-center lg:relative absolute bottom-0 lg:bottom-auto w-full lg:pt-12 py-6 pb-12 rounded-t-[48px] lg:rounded-none transition-transform duration-300 z-20 ${
           isSlidUp ? "translate-y-0" : "translate-y-1/3 lg:translate-y-0"
         } `}
         onTouchStart={handleTouchStart}
@@ -107,7 +119,10 @@ const Contact = () => {
             <label htmlFor="Collaboration Type">Collaboration Type </label>
             <div className="gradient-border-wrapper-2 p-2">
               <Select>
-                <SelectTrigger className="w-full bg-white px-4 py-3">
+                <SelectTrigger
+                  id="input-form"
+                  className="w-full bg-white px-4 py-3"
+                >
                   <SelectValue placeholder="Select Collaboration Type" />
                 </SelectTrigger>
                 <SelectContent>

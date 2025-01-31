@@ -73,7 +73,7 @@ const Page = () => {
             </h4>
             <p
               className="lg:mt-4 2xl:mt-8 mt-2  text-sm xl:text-2xl 2xl:text-4xl text-center 
-             w-[70%] mx-auto text-gray-200"
+             lg:w-[70%] w-[90%] mx-auto text-gray-200"
             >
               We empower companies to unlock their digital potential and
               individuals to build future-ready skills.
